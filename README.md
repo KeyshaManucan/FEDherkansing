@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Keysha Manucan
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://store.epicgames.com/en-US/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  EpicGames Store  
+  <img src="readme-images/store.epicgames.com_en-US_.png" width="375px" alt="De homepage van de EpicGames website. De pagina heeft 3 verschillende tabs: Discover, Browse en News. Elk tab weergeeft verschillende soorten informatie">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  EpicGames Unreal Engine  
+  <img src="readme-images/www.unrealengine.com_en-US_lang=en-US.png" width="375px" alt="EpicGames Unreal Engine pagina met informatie over Unreal Engine en hoe je het kan gebruiken.">
  
 </details>
 
