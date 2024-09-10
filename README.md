@@ -58,6 +58,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  Screenreader test: 
+  - "Back to top" knop in de footer zorgt ervoor dat je weer helemaal bovenaan de pagina komt, maar de screenreader leest niet vanaf het begin van de pagina maar weer verder waar die was bij de footer. 
+
+  <img src="readme-images/SA_screenreader.png" width="300px" alt="Screenshot van de footer van de EpicGames website, element fortnite is gemarkeerd.">
+
 </details>
 
 
