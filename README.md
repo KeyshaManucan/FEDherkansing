@@ -63,6 +63,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/SA_screenreader.png" width="300px" alt="Screenshot van de footer van de EpicGames website, element fortnite is gemarkeerd.">
 
+  - Knoppen naar volgende en vorige werken op de slider, maar de screenreader vertelt niet of je op de volgende/vorige slide bent.
+
+  <img src="readme-images/SA2_screenreader.png" width="300px" alt="Screenshot van de End of Summer Sale Spotlight slider.">
+
+
+  WCAG checklist:
+  - De HTML validator geeft heel veel errors over de pagina aan. 
+  - De pagina voeldoet niet aan de media (video en audio) eisen.
+  - De website steunt geen dark en light mode.
+  - De video op de Unreal Engine pagina kan niet worden gepauseerd.
+  - De website voldoet niet aan de prefers-reduced-motion media query. 
+
 </details>
 
 
