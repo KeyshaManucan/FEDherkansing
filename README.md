@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   EpicGames Store  
-  <img src="readme-images/store.epicgames.com_en-US_.png" width="375px" alt="De homepage van de EpicGames website. De pagina heeft 3 verschillende tabs: Discover, Browse en News. Elk tab weergeeft verschillende soorten informatie">
+  <img src="readme-images/IMG_6870.jpeg" width="375px" alt="De homepage van de EpicGames website. De pagina heeft 3 verschillende tabs: Discover, Browse en News. Elk tab weergeeft verschillende soorten informatie">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   EpicGames Unreal Engine  
-  <img src="readme-images/www.unrealengine.com_en-US_lang=en-US.png" width="375px" alt="EpicGames Unreal Engine pagina met informatie over Unreal Engine en hoe je het kan gebruiken.">
+  <img src="readme-images/IMG_6872.jpeg" width="375px" alt="EpicGames Unreal Engine pagina met informatie over Unreal Engine en hoe je het kan gebruiken.">
  
 </details>
 
@@ -85,7 +85,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  De eerste pagina dat ik ga uitwerken.
+  <img src="readme-images/IMG_0162.jpeg" width="375px" alt="breakdown van de homepagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -107,14 +108,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-	Vragen die ik wil stellen tijdens het voortgangsgesprek:
-	- Hoe open ik een andere tab/section op dezelfde pagina?
-	De eerste pagina dat ik wil uitwerken is de Homepagina van de site zelf. 
-	Op de homepagina zijn er drie verschillende categorieën waaruit je kan kiezen: Discover, Browse en News.
-	Elke tab laat verschillende soorten content zien, maar je blijft op dezelfde pagina.
+Vragen die ik wil stellen tijdens het voortgangsgesprek:
+- Hoe open ik een andere tab/section op dezelfde pagina?
+De eerste pagina dat ik wil uitwerken is de Homepagina van de site zelf. 
+Op de homepagina zijn er drie verschillende categorieën waaruit je kan kiezen: Discover, Browse en News.
+Elke tab laat verschillende soorten content zien, maar je blijft op dezelfde pagina.
 
-	Vraag aan docent:
-	Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
+<img src="readme-images/IMG_6901.jpeg" width="200px" alt="Discover tab van de pagina">
+<img src="readme-images/IMG_6902.jpeg" width="200px" alt="Dropdown waar alle tabs en categorieën te zien zijn">
+<img src="readme-images/IMG_6903.jpeg" width="200px" alt="Browse tab van de pagina">
+<img src="readme-images/IMG_6904.jpeg" width="200px" alt="News tab van de pagina">
+
+Vraag aan docent:
+Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
+<img src="readme-images/IMG_6905.jpeg" width="400px" alt="Blauwe install button">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
