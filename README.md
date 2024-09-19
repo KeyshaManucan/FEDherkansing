@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   EpicGames Store  
-  <img src="readme-images/IMG_6870.jpeg" width="375px" alt="De homepage van de EpicGames website. De pagina heeft 3 verschillende tabs: Discover, Browse en News. Elk tab weergeeft verschillende soorten informatie">
+  <img src="readme-images/IMG_6870.jpeg" width="200px" alt="De homepage van de EpicGames website. De pagina heeft 3 verschillende tabs: Discover, Browse en News. Elk tab weergeeft verschillende soorten informatie">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   EpicGames Unreal Engine  
-  <img src="readme-images/IMG_6872.jpeg" width="375px" alt="EpicGames Unreal Engine pagina met informatie over Unreal Engine en hoe je het kan gebruiken.">
+  <img src="readme-images/IMG_6872.jpeg" width="200px" alt="EpicGames Unreal Engine pagina met informatie over Unreal Engine en hoe je het kan gebruiken.">
  
 </details>
 
