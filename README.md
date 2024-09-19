@@ -127,17 +127,17 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | Diya           | ---                | ---          | ---              |
-  | Rating         | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
+  | Diya           | Thi                | Giulietta    | student 4        |
+  |                |                    |              | Keysha           |
+  | Rating.        | Lijnen naast de    | Bubbels komen| Verschillende    |
+  | Verschillende  | de titel.          | uit cursor.  | tabs openen op   |
+  | tabs openen op | Foto's veranderen  | Veranderen   | dezelfde pagina. | 
+  | dezelfde pagina| wanneer je erover  | van focus.   | Tabel samenvoegen|
+  |                | heen hovert.       |              | in carousel.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - 
   - punt 2
   - nog een punt
   - ...
