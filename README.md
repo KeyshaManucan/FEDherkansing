@@ -107,6 +107,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+	Vragen die ik wil stellen tijdens het voortgangsgesprek:
+	- Hoe open ik een andere tab/section op dezelfde pagina?
+	De eerste pagina dat ik wil uitwerken is de Homepagina van de site zelf. 
+	Op de homepagina zijn er drie verschillende categorieën waaruit je kan kiezen: Discover, Browse en News.
+	Elke tab laat verschillende soorten content zien, maar je blijft op dezelfde pagina.
+
+	Vraag aan docent:
+	Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 
   ### Agenda voor meeting
   samen met je groepje opstellen
