@@ -137,7 +137,7 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 
   Giulietta:
   - Bubbels komen uit de cursor
-  - Veranderen van focus
+  - Veranderen van focus, van responsive naar surface plane
 
   Keysha: 
   - Verschillende tabs openen op dezelfde pagina
