@@ -15,12 +15,14 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  --background-color: #101014;
+  
 }
 
 
-
+body {
+  background-color: var(--background-color);
+}
 
 
 /****************/
