@@ -16,12 +16,13 @@
 :root {
 	/* startje */
   --background-color: #101014;
-  
+  --swiper-theme-color: #ffffff;
 }
 
 
 body {
   background-color: var(--background-color);
+  padding: 0;
 }
 
 
@@ -30,23 +31,54 @@ body {
 /****************/
 
 /* jouw code */
-.swiper {
-      width: 100%;
-      height: 100%;
-    }
+header button:first-child {
+  display: flex;
+  background:none;
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+header button:first-child img:first-child{
+  height: 2em;
+}
+
+header button:first-child img:nth-child(2){
+  height: 1em;
+  
+}
+
+main > section:first-child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+main > section:first-child ul {
+  margin-bottom: 2em;
+}
+
+main > section:first-child li img {
+display: block;
+width: 80%;
+border-radius: 4%;
+}
+
+main section:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main section:nth-child(2) li img {
+  display: block;
+  width: 80%;
+  border-radius: 4%;
+}
+
+
+
+
+
+
+
+
