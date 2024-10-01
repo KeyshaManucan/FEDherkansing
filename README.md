@@ -167,7 +167,9 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   
   Tijdens de les liet ik aan de docent zien wat ik had. Ik liet allebei mijn carousellen zien en wat ik had gebruikt en gedaan om de carousel te maken. De docent vertelde mij dat het niet toegestaan was om een library te gebruiken, hierdoor moet ik op een andere manier uitzoeken hoe je een carousel moet maken zonder library. 
 
-  <img src="readme-images/" width="200px" alt="Discover tab van de pagina">
+  <img src="readme-images\Schermafbeelding 2024-10-01 195446.png" width="200px" alt="Schermafbeelding van carousel">
+  <img src="readme-images\Schermafbeelding 2024-10-01 200931.png" width="400px" alt="Schermafbeelding van gebruikte library">
+
 
 
   ### Agenda voor meeting
