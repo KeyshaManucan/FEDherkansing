@@ -164,6 +164,10 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
+  Tijdens de les liet ik aan de docent zien wat ik had. Ik liet allebei mijn carousellen zien en wat ik had gebruikt en gedaan om de carousel te maken. De docent vertelde mij dat het niet toegestaan was om een library te gebruiken, hierdoor moet ik op een andere manier uitzoeken hoe je een carousel moet maken zonder library. 
+
+  <img src="readme-images/" width="200px" alt="Discover tab van de pagina">
 
 
   ### Agenda voor meeting
@@ -185,7 +189,6 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 - ...
 
 </details>
-
 
 
 

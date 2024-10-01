@@ -17,6 +17,7 @@
 	/* startje */
   --background-color: #101014;
   --swiper-theme-color: #ffffff;
+  --download-button-color: rgb(38, 187, 255);
 }
 
 
@@ -31,10 +32,51 @@ body {
 /****************/
 
 /* jouw code */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header section {
+  display: flex;
+}
+
 header button:first-child {
   display: flex;
   background:none;
+  border: none;
+}
 
+header section > img {
+  width: 3em;
+  margin-left: .5em;
+}
+
+header > button:nth-child(2) {
+  position: absolute;
+  right: 4em;
+  padding: .6em;
+
+  background-color: var(--download-button-color);
+  border: none;
+  border-radius: .5em;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+
+}
+
+header > button:nth-child(3) {
+  background: none;
+  border: none;
+}
+
+header > button:nth-child(3) img {
+  width: 1em;
+  background: none;
 }
 
 header button:first-child img:first-child{
