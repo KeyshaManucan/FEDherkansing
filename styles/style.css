@@ -53,11 +53,15 @@ header nav {
   bottom: 0;
   translate: 0% -100%;
   transition: translate .3s;
+  overflow-y: scroll;
+
+
+  padding: 1.3em;
 }
 
 header nav button {
-  position:relative;
   z-index:100;
+  padding-left: 0;
 }
 
 header nav p {
@@ -67,15 +71,24 @@ header nav p {
   color: var(--font-color--);
 }
 
-header ul {
+header nav ul {
   list-style: none;
+  padding: 0;
+}
+
+header nav li {
+  margin-bottom: .8em;
+}
+
+header nav h3 {
+  margin: 2em 0 1em 0;
 }
 
 nav.toonMenu {
   translate: 0% 0%;
 }
 
-header a{
+header nav a{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--font-color--);
   font-weight: 500;
@@ -130,6 +143,16 @@ header > button:nth-of-type(3) img {
   background: none;
 }
 
+/*search en discover*/
+header > section {
+  display: flex;
+  justify-content: center;
+}
+
+header > section img {
+  transform: rotate(90deg);
+  width: 1em;
+}
 
 /**********************************/
 
@@ -173,11 +196,12 @@ main > section:first-of-type ul img {
 }
 
 main > section:first-of-type h4 {
-  margin: .5em 0;
+  margin: 0;
+  line-height: 1em;
 }
 
-main > section:first-of-type h3 {
-  margin: 0;
+main > section:first-of-type h5 {
+  margin: .5em 0;
 }
 
 

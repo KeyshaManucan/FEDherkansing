@@ -170,7 +170,17 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   <img src="readme-images\Schermafbeelding 2024-10-01 195446.png" width="200px" alt="Schermafbeelding van carousel">
   <img src="readme-images\Schermafbeelding 2024-10-01 200931.png" width="400px" alt="Schermafbeelding van gebruikte library">
 
+  Epic games heeft twee rijen aan navigatie op mobiel. De normale navigatie en de navigatie op de store pagina.
 
+   <img src="readme-images\epic_nav.png" width="200px" alt="Schermafbeelding van de epic games website zelf">
+
+   Dit probeerde ik na te maken. Ik wilde grid hiervoor gebruiken. Ten eerste heb ik twee containers met behulp van div om de verschillende secties heen gezet, ik maakte gebruik van div omdat ik niet wist welke andere container ik moest gebruiken. 
+
+  <img src="readme-images\div_container.png" width="200px" alt="Schermafbeelding van mijn code"> 
+
+  Maar dit zorgde ervoor dat het er chaotischer uitzag en wist ik niet helemaal hoe ik verder moest.
+
+  <img src="readme-images\nav_fixen.png" width="200px" alt="Schermafbeelding van mijn gecodeerde website">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
