@@ -1,9 +1,16 @@
 // JavaScript Document
-console.log("hi");
+let openButton = document.querySelector("header > button");
+let sluitButton = document.querySelector("nav button");
 
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-      },
-    });
+openButton.onclick = openMenu;
+sluitButton.onclick = sluitMenu;
+
+function openMenu () {
+    let deNav = document.querySelector("nav")
+    deNav.classList.add("toonMenu");
+}
+
+function sluitMenu () {
+    let deNav = document.querySelector("nav");
+    deNav.classList.remove("toonMenu");
+}

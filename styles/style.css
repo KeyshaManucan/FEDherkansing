@@ -1,122 +1,184 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-  --background-color: #101014;
-  --swiper-theme-color: #ffffff;
-  --download-button-color: rgb(38, 187, 255);
-}
-
-
-body {
-  background-color: var(--background-color);
-  padding: 0;
-}
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
+:root {
+  /* startje */
+--background-color: #101014;
+--header-color: #121216;
+--download-button-color: #26bbff;
+--font-color--: #ffffff;
+}
+
+button:not(disabled) {
+  cursor:pointer;
+}
 
 /* jouw code */
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-color);
+  padding: 1.3em .5em;
+  margin: 0;
+
+  position:sticky;
+  top:0;
 }
 
-header section {
-  display: flex;
-}
-
-header button:first-child {
-  display: flex;
-  background:none;
-  border: none;
-}
-
-header section > img {
-  width: 3em;
-  margin-left: .5em;
-}
-
-header > button:nth-child(2) {
-  position: absolute;
-  right: 4em;
-  padding: .6em;
-
-  background-color: var(--download-button-color);
-  border: none;
-  border-radius: .5em;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-
-}
-
-header > button:nth-child(3) {
-  background: none;
-  border: none;
-}
-
-header > button:nth-child(3) img {
-  width: 1em;
-  background: none;
-}
-
+/*nav button*/
 header button:first-child img:first-child{
   height: 2em;
 }
 
 header button:first-child img:nth-child(2){
   height: 1em;
-  
 }
 
-main > section:first-child {
-  width: 100%;
-  height: 100%;
+header button img:nth-of-type(2) {
+  transform: rotate(90deg);
+  margin: .5em;
+  color: white;
+}
+/**************************************/
+
+
+header nav {
+  position: fixed;
+  background-color: var(--header-color);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  translate: 0% -100%;
+  transition: translate .3s;
+}
+
+header nav button {
+  position:relative;
+  z-index:100;
+}
+
+header nav p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--font-color--);
+}
+
+header ul {
+  list-style: none;
+}
+
+nav.toonMenu {
+  translate: 0% 0%;
+}
+
+header a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--font-color--);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header button {
   display: flex;
-  justify-content: center;
-}
-main > section:first-child ul {
-  margin-bottom: 2em;
-}
-
-main > section:first-child li img {
-display: block;
-width: 80%;
-border-radius: 4%;
+  align-items: center;
+  background: none;
+  border: none;
+  order: -1;
 }
 
-main section:nth-child(2) {
-  width: 100%;
-  height: 100%;
+/*store*/
+header > img {
+  position: absolute;
+  left: 4em;
+  width: 3em;
+  margin-left: .5em;
+  z-index: -1;
+}
+
+
+/*nav open button pijl*/
+header nav button img:nth-of-type(2) {
+  transform: rotate(-90deg);
+}
+
+
+
+/*download button*/
+header > button:nth-of-type(2) {
+  position: absolute;
+  right: 4em;
+  padding: .3em .5em;
+  z-index: -1;
+
+  background-color: var(--download-button-color);
+  border-radius: .4em;
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: .95em;
+  text-transform: capitalize;
+}
+
+
+/*hamburger menu*/
+header > button:nth-of-type(3) img {
+  width: 2em;
+  background: none;
+}
+
+
+/**********************************/
+
+
+
+main > section:first-of-type {
+  padding: 1em;
+  width: 100vmin;
+}
+
+
+main > section:first-of-type a {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
-main section:nth-child(2) li img {
-  display: block;
-  width: 80%;
-  border-radius: 4%;
+/*hoe ktijg ik de h2 in het midden?*/
+main > section:first-of-type h2 {
+  display: grid;
 }
 
+main > section:first-of-type a img {
+  height: 1.3em;
+  margin-left: .5em;
+}
+
+main > section:first-of-type ul {
+  display: flex;
+  overflow-x: scroll;
+  list-style: none;
+  padding-left: 0;
+}
+
+main > section:first-of-type li {
+  margin: .5em;
+}
+
+main > section:first-of-type ul img {
+  width: 55vw;
+  border-radius: .5em;
+}
+
+main > section:first-of-type h4 {
+  margin: .5em 0;
+}
+
+main > section:first-of-type h3 {
+  margin: 0;
+}
 
 
 
