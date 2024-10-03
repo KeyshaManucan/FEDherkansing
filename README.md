@@ -182,6 +182,11 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 
   <img src="readme-images\nav_fixen.png" width="200px" alt="Schermafbeelding van mijn gecodeerde website">
 
+  Wat wil ik vragen tijdens het 2e voortgang gesprek:
+  - Hoe verander je de kleur van een svg?
+  - Hoe krijg ik de tweede nav balk?
+  - Waarom is er aan de boven kant van mijn site een kleine pijl te zien?
+    
   ### Agenda voor meeting
   samen met je groepje opstellen
 
