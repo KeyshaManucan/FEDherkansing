@@ -146,10 +146,12 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - 
-  - punt 2
-  - nog een punt
-  - ...
+  - Section switch -> Hoeft niet te maken
+  - Hover werkte niet -> Hover werkt niet op telefoon hover
+  - Hover image, transition, opacity
+  - Grid maken voor je lijst of in je lijst
+  - h2::before{}
+  - <h1><img src="" alt="website titel"></h1>
 
 </details>
 
@@ -190,20 +192,41 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+    Diya:
+  - Carousel maken
+  - Problemen met nth-of-child
+
+  Thi: 
+  - Navigatie button op de juiste plek
+  - Img size
+
+  Giulietta:
+  - Video op achtergrond goed krijgen
+  - Classes en id's
+  - Nav sticky maken
+
+  Keysha: 
+  - Hoe verander je de kleur van een svg?
+  - Hoe krijg ik de tweede nav balk?
+  - Waarom is er aan de boven kant van mijn site een kleine pijl te zien?
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Font downloaden op google: Reset refresh. Inspect -> Network -> Font
+  - nth-of-type telt van 1t/m verder
+  - Mag twee navs
+  - Position: fixed, om elementen vast te zetten. top: 0, right: 0, left: 0,
+  - Sluitmenu naar rechts
+  - Justify-self: end;
+
+  - Lelijke manier icoon veranderen: 
+  filter: invert(1); van wit naar zwart of andersom
+
+  - Mooie manier icoon veranderen:
+  SVG openen in studio code, de link pakken en in je html zetten. SVG benoemen in de CSS en kleur veranden (fill: kleur;)
+
 
 </details>
 
