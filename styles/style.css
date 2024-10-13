@@ -7,6 +7,7 @@
 --header-color: #121216;
 --download-button-color: #26bbff;
 --font-color--: #ffffff;
+--svg-color--: #ffffff;
 }
 
 button:not(disabled) {
@@ -16,9 +17,10 @@ button:not(disabled) {
 /* jouw code */
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3.5em 1fr auto 6em 3em;
   align-items: center;
+
   background-color: var(--header-color);
   padding: 1.3em .5em;
   margin: 0;
@@ -28,18 +30,18 @@ header {
 }
 
 /*nav button*/
-header button:first-child img:first-child{
+header button:first-of-type img:first-of-type{
   height: 2em;
 }
 
-header button:first-child img:nth-child(2){
-  height: 1em;
+header button:first-of-type svg{
+  height: .8em;
 }
 
-header button img:nth-of-type(2) {
+header > button:first-of-type svg {
   transform: rotate(90deg);
   margin: .5em;
-  color: white;
+  color: var(--svg-color--);
 }
 /**************************************/
 
@@ -62,6 +64,7 @@ header nav {
 header nav button {
   z-index:100;
   padding-left: 0;
+  margin-top: 1em;
 }
 
 header nav p {
@@ -100,32 +103,31 @@ header button {
   align-items: center;
   background: none;
   border: none;
-  order: -1;
 }
 
 /*store*/
 header > img {
-  position: absolute;
-  left: 4em;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
   width: 3em;
-  margin-left: .5em;
-  z-index: -1;
 }
 
 
 /*nav open button pijl*/
-header nav button img:nth-of-type(2) {
+header nav button svg{
   transform: rotate(-90deg);
+  margin: .5em;
+  color: var(--svg-color--);
 }
 
 
 
 /*download button*/
 header > button:nth-of-type(2) {
-  position: absolute;
-  right: 4em;
+  grid-column: 4 / 5;
   padding: .3em .5em;
-  z-index: -1;
+  width: 6em;
 
   background-color: var(--download-button-color);
   border-radius: .4em;
@@ -134,13 +136,19 @@ header > button:nth-of-type(2) {
   font-weight: 600;
   font-size: .95em;
   text-transform: capitalize;
+
+  /* text-align: center;  HOE KRIJG JE TEXT IN HET MIDDEN?*/
 }
 
 
 /*hamburger menu*/
-header > button:nth-of-type(3) img {
+header > button:nth-of-type(3) { /*HOE KRIJG JE ITEMS IN HET MIDDEN BIJ EEN GRID?*/
+  grid-column: 5 / 6;
+}
+
+.hamburgermenu {
+  fill: var(--svg-color--);
   width: 2em;
-  background: none;
 }
 
 /*search en discover*/
@@ -149,10 +157,7 @@ header > section {
   justify-content: center;
 }
 
-header > section img {
-  transform: rotate(90deg);
-  width: 1em;
-}
+
 
 /**********************************/
 
@@ -174,14 +179,22 @@ main > section:first-of-type h2 {
   display: grid;
 }
 
-main > section:first-of-type a img {
+main > section:first-of-type a svg {
   height: 1.3em;
   margin-left: .5em;
+  color: var(--svg-color--);
+}
+
+main a {
+  text-decoration: none;
 }
 
 main > section:first-of-type ul {
   display: flex;
-  overflow-x: scroll;
+  
+  overflow-x: auto;
+  scrollbar-width: none;
+
   list-style: none;
   padding-left: 0;
 }
