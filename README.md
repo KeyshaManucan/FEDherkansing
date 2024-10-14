@@ -85,11 +85,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  De eerste pagina dat ik ga uitwerken.
-  <img src="readme-images/IMG_0162.jpeg" width="375px" alt="breakdown van de homepagina">
+  <img src="readme-images/Pagina_1.jpg" width="375px" alt="breakdown van de homepagina">
+  De eerste pagina dat ik ga uitwerken: Epic Games Store.
+
+  <img src="readme-images/Pagina_2.jpg" width="375px" alt="breakdown van de Unreal Engine pagina">
+  De tweede pagina dat ik ga uitwerken: Unreal Engine.
+
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Menu.jpg" width="375px" alt="breakdown van de menu van beide pagina's">
+  De menu van beide pagina's dat ik ga uitwerken.
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
