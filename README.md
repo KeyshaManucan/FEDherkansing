@@ -192,7 +192,7 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-    Diya:
+  Diya:
   - Carousel maken
   - Problemen met nth-of-child
 
