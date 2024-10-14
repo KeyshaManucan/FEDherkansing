@@ -232,6 +232,19 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   - Mooie manier icoon veranderen:
   SVG openen in studio code, de link pakken en in je html zetten. SVG benoemen in de CSS en kleur veranden (fill: kleur;)
 
+  ### Stand van zaken
+
+  Momenteel heb ik twee problemen waar ik de oplossing niet voor weet. 
+  Ik krijg een error op mijn code bij <button area-hidden="true">. Ik heb deze code vorig jaar bij mijn vorige website gebruikt en toen gaf die geen error maar nu wel. 
+
+  <img src="readme-images\error_blocked_area_hidden.png" width="400px" alt="Schermafbeelding van error code blocked area hidden">
+
+  Verder verscijnt de tekst dat in mijn nav zit in op de pagina, terwijl het "hidden" moet blijven. Als ik op de toolbar klik dan verschijnt hij niet. Waar zou dit aan kunnen liggen?
+
+  <img src="readme-images\probleem_2.png" width="400px" alt="Schermafbeelding van probleem met nav bar">
+  <img src="readme-images\probleem_1.png" width="400px" alt="Schermafbeelding van probleem met nav bar">
+
+
 
 </details>
 

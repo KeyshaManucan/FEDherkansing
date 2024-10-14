@@ -44,7 +44,7 @@ main div button svg {
 /*Discover something new*/
 main > section:first-of-type {
   padding: 1em;
-  width: 100vmin;
+  min-width: 100vw;
 }
 
 main > section:first-of-type a {
@@ -84,7 +84,10 @@ main > section:first-of-type li {
 }
 
 main > section:first-of-type ul img {
-  width: 55vw;
+  display: block;
+  width: auto;
+  max-width: 50vw;
+  max-height: 50vh;
   border-radius: .5em;
 }
 
