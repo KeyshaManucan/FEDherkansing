@@ -1,0 +1,165 @@
+:root {
+    /* startje */
+    --background-color: #101014;
+    --header-color: #121216;
+    --download-button-color: #26bbff;
+    --font-color--: #ffffff;
+    --game-type--: #ACACAD;
+    --svg-color--: #ffffff;
+    --footer-background--: #202020;
+    --footer-icon--: #cfcfcf;
+  }
+
+  
+  button:not(disabled) {
+    cursor:pointer;
+  }
+  
+  
+  header {
+    display: grid;
+    grid-template-columns: 3.5em 1fr auto 6em 3em;
+    align-items: center;
+  
+    background-color: var(--header-color);
+    padding: 1.3em .5em;
+    margin: 0;
+  
+    position:sticky;
+    top:0;
+  }
+
+  
+  /*nav button*/
+  header button:first-of-type img:first-of-type{
+    height: 2em;
+  }
+
+  
+  header button:first-of-type svg{
+    height: .8em;
+  }
+
+  
+  header > button:first-of-type svg {
+    transform: rotate(90deg);
+    margin: .5em;
+    color: var(--svg-color--);
+  }
+
+
+ 
+  /*Navigatie*/
+  header nav {
+    position: fixed;
+    background-color: var(--header-color);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    translate: 0% -100%;
+    transition: translate .3s;
+    padding: 1.3em;
+    z-index: 100;
+  }
+
+  
+  header nav button {
+    z-index:100;
+    padding-left: 0;
+    margin-top: 1em;
+  }
+
+  
+  header nav p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--font-color--);
+  }
+
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  
+  header nav li {
+    margin-bottom: .8em;
+  }
+
+  
+  header nav h3 {
+    margin: 2em 0 1em 0;
+  }
+
+  
+  nav.toonMenu {
+    translate: 0% 0%;
+  }
+
+  
+  header nav a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--font-color--);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  
+  header button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+  }
+
+  
+  /*store*/
+  header > img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  
+    width: 3em;
+  }
+
+  
+  /*nav open button pijl*/
+  header nav button svg{
+    transform: rotate(-90deg);
+    margin: .5em;
+    color: var(--svg-color--);
+  }
+
+  
+  /*download button*/
+  header > button:nth-of-type(2) {
+    grid-column: 4 / 5;
+    padding: .3em .5em;
+    width: 6em;
+  
+    background-color: var(--download-button-color);
+    border-radius: .4em;
+  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: .95em;
+    text-transform: capitalize;
+  
+    /* text-align: center;  HOE KRIJG JE TEXT IN HET MIDDEN?*/
+  }
+  
+  
+  /*hamburger menu*/
+  header > button:nth-of-type(3) {
+    grid-column: 5 / 6;
+    justify-content: center;
+  }
+
+  
+  .hamburgermenu {
+    fill: var(--svg-color--);
+    width: 2em;
+  }
+  

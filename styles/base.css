@@ -16,6 +16,9 @@
     --download-button-color: #26bbff;
     --font-color--: #ffffff;
     --game-type--: #ACACAD;
+    --svg-color--: #ffffff;
+    --footer-background--: #202020;
+    --footer-icon--: #cfcfcf;
   }
   
   
@@ -61,7 +64,6 @@
     color: var(--game-type--);
   }
 
-  
 
   p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

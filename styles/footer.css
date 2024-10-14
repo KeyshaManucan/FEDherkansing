@@ -1,0 +1,66 @@
+:root {
+    /* startje */
+  --background-color: #101014;
+  --header-color: #121216;
+  --download-button-color: #26bbff;
+  --font-color--: #ffffff;
+  --svg-color--: #ffffff;
+  --footer-background--: #202020;
+  --footer-icon--: #cfcfcf;
+}
+
+
+footer {
+    display: grid;
+
+    background-color: var(--footer-background--);
+    padding: 1.5em 1em;
+}
+
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+footer svg {
+    fill: var(--footer-icon--);
+}
+
+
+footer ul:first-of-type {
+    display: flex;
+    grid-column: 1/2;
+}
+
+
+footer ul:first-of-type li {
+    margin-right: .5em;
+}
+
+
+footer ul:first-of-type svg {
+    width: 2em;
+}
+
+
+footer > a {
+    grid-column: 2/3;
+
+    justify-self: flex-end;
+    align-content: center;
+
+    transform: rotate(-90deg);
+}
+
+
+footer > a svg {
+    border: .15em white solid;
+    width: 2em;
+    height: 2em;
+}
+
+
+
+

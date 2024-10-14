@@ -1,188 +1,67 @@
 /****************/
 /* JOUW STYLING */
 /****************/
-:root {
-  /* startje */
---background-color: #101014;
---header-color: #121216;
---download-button-color: #26bbff;
---font-color--: #ffffff;
---svg-color--: #ffffff;
-}
 
-button:not(disabled) {
-  cursor:pointer;
-}
+/**********************************/
 
-/* jouw code */
-
-header {
-  display: grid;
-  grid-template-columns: 3.5em 1fr auto 6em 3em;
-  align-items: center;
-
-  background-color: var(--header-color);
-  padding: 1.3em .5em;
-  margin: 0;
-
-  position:sticky;
-  top:0;
-}
-
-/*nav button*/
-header button:first-of-type img:first-of-type{
-  height: 2em;
-}
-
-header button:first-of-type svg{
-  height: .8em;
-}
-
-header > button:first-of-type svg {
-  transform: rotate(90deg);
-  margin: .5em;
+/*search*/
+main svg {
   color: var(--svg-color--);
-}
-/**************************************/
-
-
-header nav {
-  position: fixed;
-  background-color: var(--header-color);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  translate: 0% -100%;
-  transition: translate .3s;
-  overflow-y: scroll;
-
-
-  padding: 1.3em;
+  width: 1em;
+  margin: 1em;
 }
 
-header nav button {
-  z-index:100;
-  padding-left: 0;
-  margin-top: 1em;
+main div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1.5em 1.8em;
 }
 
-header nav p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
-  font-weight: 900;
-  color: var(--font-color--);
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-header nav li {
-  margin-bottom: .8em;
-}
-
-header nav h3 {
-  margin: 2em 0 1em 0;
-}
-
-nav.toonMenu {
-  translate: 0% 0%;
-}
-
-header nav a{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--font-color--);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-header button {
+main div button {
   display: flex;
-  align-items: center;
+  justify-content: center;
+
   background: none;
   border: none;
 }
 
-/*store*/
-header > img {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-
-  width: 3em;
+main div h1 {
+  margin-top: 0.5em;
+  font-size: 1.2em;
 }
 
+main div button svg {
+  width: .5em;
+  transform: rotate(90deg);
 
-/*nav open button pijl*/
-header nav button svg{
-  transform: rotate(-90deg);
-  margin: .5em;
+  fill: none;
   color: var(--svg-color--);
+  z-index: -1; /*Waarom krijg je het boven de nav te zien?*/
 }
 
 
 
-/*download button*/
-header > button:nth-of-type(2) {
-  grid-column: 4 / 5;
-  padding: .3em .5em;
-  width: 6em;
-
-  background-color: var(--download-button-color);
-  border-radius: .4em;
-
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
-  font-size: .95em;
-  text-transform: capitalize;
-
-  /* text-align: center;  HOE KRIJG JE TEXT IN HET MIDDEN?*/
-}
-
-
-/*hamburger menu*/
-header > button:nth-of-type(3) { /*HOE KRIJG JE ITEMS IN HET MIDDEN BIJ EEN GRID?*/
-  grid-column: 5 / 6;
-}
-
-.hamburgermenu {
-  fill: var(--svg-color--);
-  width: 2em;
-}
-
-/*search en discover*/
-header > section {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-/**********************************/
-
-
-
+/*Discover something new*/
 main > section:first-of-type {
   padding: 1em;
   width: 100vmin;
 }
-
 
 main > section:first-of-type a {
   display: flex;
   align-items: center;
 }
 
-/*hoe ktijg ik de h2 in het midden?*/
+/*hoe krijg ik de h2 in het midden?*/
 main > section:first-of-type h2 {
-  display: grid;
+  margin: 0;
+  padding-bottom: .2em;
 }
 
 main > section:first-of-type a svg {
-  height: 1.3em;
+  width: 1.5em;
   margin-left: .5em;
-  color: var(--svg-color--);
+  fill: var(--svg-color--);
 }
 
 main a {
@@ -197,10 +76,11 @@ main > section:first-of-type ul {
 
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
 }
 
 main > section:first-of-type li {
-  margin: .5em;
+  margin-right: 1em;
 }
 
 main > section:first-of-type ul img {
@@ -216,7 +96,7 @@ main > section:first-of-type h4 {
 main > section:first-of-type h5 {
   margin: .5em 0;
 }
-
+/*******************************************/
 
 
 
