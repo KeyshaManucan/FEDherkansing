@@ -57,7 +57,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    translate: 0% -100%;
+    translate: 0% -200%;
     transition: translate .3s;
     padding: 1.3em;
     z-index: 100;
