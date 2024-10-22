@@ -256,6 +256,13 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
+  html validator error codes: 
+  - H1 mag niet in een button element
+  - SVG's errors en warnings
+  - H6 mag niet in een ul element
+
+    
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
