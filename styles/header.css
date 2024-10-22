@@ -25,7 +25,6 @@
     padding: 1.3em .5em;
     margin: 0;
   
-    position:sticky;
     top:0;
   }
 
@@ -52,15 +51,18 @@
   /*Navigatie*/
   header nav {
     position: fixed;
-    background-color: var(--header-color);
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     translate: 0% -200%;
     transition: translate .3s;
+
+    background-color: var(--header-color);
     padding: 1.3em;
     z-index: 100;
+
+    overflow-y: scroll;
   }
 
   

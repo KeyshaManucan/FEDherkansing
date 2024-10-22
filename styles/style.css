@@ -1,36 +1,66 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+:root {
+  --background-color: #101014;
+  --header-color: #121216;
+  --download-button-color: #26bbff;
+  --font-color--: #ffffff;
+  --game-type--: #ACACAD;
+  --svg-color--: #ffffff;
+  --search-bar: #18181c;
+  --border-color: #404044;
+  --free-games-background: #202024;
+  --footer-background--: #202020;
+  --footer-icon--: #cfcfcf;
+
+  --basis-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 /**********************************/
 
-/*search*/
-main svg {
+/*search button*/
+
+main nav svg:first-of-type {
   color: var(--svg-color--);
-  width: 1em;
+  width: 1.2em;
   margin: 1em;
 }
 
-main div {
+
+main nav {
+  position: sticky;
+  top: 0;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 1.5em 1.8em;
+  padding: 1em .5em;
+  justify-content: center;
+
+  background-color: var(--background-color);
+  height: 5em;
+  width: 100%;
 }
 
-main div button {
+main nav button {
   display: flex;
-  justify-content: center;
 
   background: none;
   border: none;
 }
 
-main div h1 {
+main nav h1 {
   margin-top: 0.5em;
   font-size: 1.2em;
 }
 
-main div button svg {
+main nav button:nth-of-type(2) {
+  padding-left: 1.3em;
+  justify-content: center;
+}
+
+main nav button:nth-of-type(2) svg {
   width: .5em;
   transform: rotate(90deg);
 
@@ -39,12 +69,60 @@ main div button svg {
   z-index: -1; /*Waarom krijg je het boven de nav te zien?*/
 }
 
+/*Discover nav*/
+main nav ul {
+  list-style: none;
+  display: none;
+
+  grid-column: 1 / 4 ;
+  grid-row: 2 / 3;
+}
+
+.discoverMenu {
+  display: block;
+  z-index: 100;
+  
+  background-color: var(--background-color);
+  width: 100%;
+  height: 20em;
+  padding: 2em;
+
+}
+
+main nav ul li {
+  padding: 1.5em 0;
+  border-bottom: solid var(--border-color) 1px;
+  
+}
+
+main nav ul li a {
+  color: var(--font-color--);
+  font-family: var(--basis-font);
+}
+
+/*discover nav arrow animation*/
+@keyframes arrow-animation {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: -180deg;
+  }
+}
+
+main nav button:nth-of-type(2)[aria-label="arrow"].rotate svg {
+  animation-name: arrow-animation;
+  animation-duration: 2s;
+}
+
+
 
 
 /*Discover something new*/
 main > section:first-of-type {
   padding: 1em;
-  min-width: 100vw;
+  
 }
 
 main > section:first-of-type a {
@@ -89,6 +167,8 @@ main > section:first-of-type ul img {
   max-width: 50vw;
   max-height: 50vh;
   border-radius: .5em;
+
+  margin-top: .5em;
 }
 
 main > section:first-of-type h4 {
@@ -101,6 +181,60 @@ main > section:first-of-type h5 {
 }
 /*******************************************/
 
+/*Free Games*/
+main section:nth-of-type(2) {
+  background-color: var(--free-games-background);
+  border-radius: 1em;
+
+  display: grid;
+  grid-template-rows: 3em 1fr 1fr 1fr;
+  grid-template-columns: 10%  auto 30%;
+
+  padding: 2em 1em;
+}
+
+main section:nth-of-type(2) h2 {
+  grid-row: 1 / 2;
+  align-self: center;
+  margin-left: 1em;
+}
+
+main section:nth-of-type(2) svg {
+  width: 2.5em;
+  fill: var(--svg-color--);
+
+  grid-row: 1 / 2;
+}
+
+main section:nth-of-type(2) button {
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+
+  background-color: transparent;
+  color: var(--font-color--);
+  border: solid var(--border-color) .1em;
+  border-radius: .5em;
+  padding: 0 .5em;
+  
+  font-size: 1em;
+  font-weight: bold;
+}
+
+main section:nth-of-type(2) article {
+  margin-top: 3em;
+}
+
+main section:nth-of-type(2) article:first-of-type {
+  grid-row: 2 / 3;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2) {
+  grid-row: 3 / 4;
+}
+
+main section:nth-of-type(2) article:nth-of-type(3) {
+  grid-row: 4 / 5;
+}
 
 
 
