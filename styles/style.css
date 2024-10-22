@@ -113,7 +113,9 @@ main nav ul li a {
 
 main nav button:nth-of-type(2)[aria-label="arrow"].rotate svg {
   animation-name: arrow-animation;
-  animation-duration: 2s;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
 }
 
 
@@ -204,6 +206,10 @@ main section:nth-of-type(2) svg {
   fill: var(--svg-color--);
 
   grid-row: 1 / 2;
+}
+
+main section:nth-of-type(2) article a img {
+  grid-column: 1 / 5;
 }
 
 main section:nth-of-type(2) button {
