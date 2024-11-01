@@ -10,7 +10,11 @@
   --svg-color--: #ffffff;
   --search-bar: #18181c;
   --border-color: #404044;
+
+  --free-games-font: #000000;
   --free-games-background: #202024;
+  --free-games-fn-background: #26bbff;
+
   --footer-background--: #202020;
   --footer-icon--: #cfcfcf;
 
@@ -114,8 +118,8 @@ main nav ul li a {
 main nav button:nth-of-type(2)[aria-label="arrow"].rotate svg {
   animation-name: arrow-animation;
   animation-duration: .3s;
-  animation-fill-mode: forwards;
-  animation-direction: alternate;
+  animation-fill-mode:both;
+  /* animation-direction: alternate; */
 }
 
 
@@ -230,9 +234,23 @@ main section:nth-of-type(2) article {
   margin-top: 3em;
 }
 
+
+/*Article 1*/
 main section:nth-of-type(2) article:first-of-type {
   grid-row: 2 / 3;
 }
+
+main section:nth-of-type(2) article:first-of-type a {
+  grid-column: 1 / 5;
+}
+
+main section:nth-of-type(2) article:first-of-type a p {
+  background-color: var(--free-games-fn-background);
+  color: var(--free-games-font) ;
+  font-weight: bold;
+}
+/*******************/
+
 
 main section:nth-of-type(2) article:nth-of-type(2) {
   grid-row: 3 / 4;
@@ -241,6 +259,8 @@ main section:nth-of-type(2) article:nth-of-type(2) {
 main section:nth-of-type(2) article:nth-of-type(3) {
   grid-row: 4 / 5;
 }
+
+
 
 
 

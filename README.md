@@ -261,6 +261,15 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   - SVG's errors en warnings
   - H6 mag niet in een ul element
 
+  <img src="readme-images\html_validator.png" width="400px" alt="Schermafbeelding van error en warning code's in mijn html">
+
+  Screenreader:
+  - Als je op tab drukt lees je alleen de linkjes, maar ik wil dat die door alle content heen gaat. 
+  - Als je op H drukt gaat die door alle tekst (heading, p)
+  - Screenreader shortcuts leren
+  
+  CAPS LOCK + SPATIE = Scan aan (dit wil je aan hebben staan)
+
     
 
   ### Bevindingen
