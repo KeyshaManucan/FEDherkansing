@@ -234,17 +234,25 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 
   ### Stand van zaken
 
+  Het vorige probleem met de header positionering heb ik opgelost door alles in een grid te zetten en het goed te positioneren in de grid. 
+
   Momenteel heb ik twee problemen waar ik de oplossing niet voor weet. 
   Ik krijg een error op mijn code bij <button area-hidden="true">. Ik heb deze code vorig jaar bij mijn vorige website gebruikt en toen gaf die geen error maar nu wel. 
 
   <img src="readme-images\error_blocked_area_hidden.png" width="400px" alt="Schermafbeelding van error code blocked area hidden">
 
-  Verder verscijnt de tekst dat in mijn nav zit in op de pagina, terwijl het "hidden" moet blijven. Als ik op de toolbar klik dan verschijnt hij niet. Waar zou dit aan kunnen liggen?
+  Verder verschijnt de tekst dat in mijn nav zit in op de pagina, terwijl het "hidden" moet blijven. Als ik op de toolbar klik dan verschijnt hij niet. Waar zou dit aan kunnen liggen?
 
   <img src="readme-images\probleem_2.png" width="400px" alt="Schermafbeelding van probleem met nav bar">
   <img src="readme-images\probleem_1.png" width="400px" alt="Schermafbeelding van probleem met nav bar">
 
+  Tijdens de les heb ik samen met de student assistente dit probleem opgelost. 
 
+  We hebben de translate van de nav groter gemaakt. In plaats van -100 hebben we het naar -200 veranderd, zo was de tekst van de nav niet meer zichtbaar als de nav is ingeklapt. 
+
+  Voor de error code met "area-hidden" hebben we "area-hidden" weggehaald uit mijn html. Zelfs zonder area-hidden werkte de nav nog steeds en was de code weg. 
+
+  Ik had area-hidden gebruikt omdat ik dit vorig ook had gebruikt voor mijn vorige website en daar kreeg ik geen error code bij. 
 
 </details>
 
@@ -274,6 +282,14 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  ### Stand van zaken
+
+  <img src="readme-images\topsellers.png" width="400px" alt="Schermafbeelding van start van code voor de top sellers gedeelte">
+  
+  Op de officiële website staan er drie verschillende categorieën naast elkaar als een soort tabel, dit wil recreëren. Ik dacht er eerst aan om alle categorieën in één section te plaatsen en voor elke categorie een aparte section te maken met daarin verschillende list items. 
+
+  Dit leek me uiteindelijk geen goed idee, omdat er dan steeds een heading in een de ul element staat. Daarom ga ik proberen om alle drie de categorieën in drie verschillende sections te plaatsen, met daarin verschillende articles van elke game. 
 
 </details>
 
