@@ -31,3 +31,16 @@ arrowRotatie.onclick = startRotate;
 function startRotate() {
   arrowRotatie.classList.toggle("rotate");
 }
+
+// pagination dots voor carousel
+// const dots = document.querySelectorAll('.pagination a');
+
+// dots.forEach(dot => {
+//   dot.addEventListener('click', function (event) {
+//     event.preventDefault();
+    
+//     dots.forEach(d => d.style.backgroundColor = '#58585b');
+    
+//     this.style.backgroundColor = '#ffffff';
+//   });
+// });

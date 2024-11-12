@@ -34,7 +34,7 @@ html {
 
 main nav svg:first-of-type {
   color: var(--svg-color--);
-  width: 1.2em;
+  width: 1.5em;
   margin: 1em;
 }
 
@@ -42,6 +42,7 @@ main nav svg:first-of-type {
 main nav {
   position: sticky;
   top: 0;
+  z-index: 2;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -134,34 +135,42 @@ main section:first-of-type {
   padding: 1em;
 }
 
-main section:first-of-type ul {
+main section:first-of-type ul:first-of-type {
   display: flex;
   overflow-x: auto; 
   scrollbar-width: none;
-  
   scroll-behavior: smooth;
+  /* scroll-snap-type: x mandatory; Werkt niet samen met scroll-behaviour: smooth;*/
+  overscroll-behavior-x: contain;
+  
   padding: 0;
 }
 
-main section:first-of-type li {
+main section:first-of-type ul:first-of-type li {
   display: grid;
-  display: block;
+  grid-template-columns: 1fr 1fr 3em;
+  grid-template-rows: 3em 8em 5em 14em;
+
   position: relative;
 
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; Werkt alleen als scroll-snap-type is geactiveerd.*/
   flex-shrink: 0;
   width: 20em;
-  height: 25em;
+  height: 28em;
 
   background-size: cover ;
   background-repeat: no-repeat;
   border-radius: 1em;
 
-  padding: 2em;
-  margin-right: 2em;
+  padding: 1em;
+  margin-right: 1em;
 }
 
-main section:first-of-type li::before {
+
+
+
+/*Donker gradient overlay onder de slide*/
+main section:first-of-type ul:first-of-type li::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -171,49 +180,156 @@ main section:first-of-type li::before {
   z-index: 0;
 
   border-radius: 1em;
-  background: rgb(16,16,20);
-  background: linear-gradient(0deg, rgba(16,16,20,0.7540266106442577) 0%, rgba(255,255,255,0) 100%);
-
+  background: #101014;
+  background: linear-gradient(0deg, #101014c0 0%, #ffffff00 100%);
 }
 
-main section:first-of-type li button {
+
+
+
+
+
+main section:first-of-type ul:first-of-type a {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+
+main section:first-of-type ul:first-of-type li button {
   background: none;
   border: none;
+
+  grid-column: 3 / 4;
+
+  position: relative; /*zodat z-index werkt*/
+  z-index: 1;
 }
 
-main section:first-of-type li button svg {
+main section:first-of-type ul:first-of-type li button svg {
   fill: var(--svg-color--);
+  background-color: #00000053;
+  border-radius: 2em;
+  width: 3em;
 }
 
-main section:first-of-type li img {
-  width: 4em;
+main section:first-of-type ul:first-of-type li img {
+  width: 8em;
+  position: relative; /*zodat z-index werkt*/
+  z-index: 1;
+}
+
+main section:first-of-type ul:first-of-type li a p {
+  position: relative; /*zodat z-index werkt*/
+  z-index: 1;
+  margin: 0;
+}
+
+main section:first-of-type ul:first-of-type li a > p:first-of-type {
+  font-size: .8em;
+  font-weight: 700;
+  margin-bottom: 1em;
 }
 
 
 
 
-/*background images*/
-main section:first-of-type li:first-of-type {
+
+
+/*Carousel dot pagination*/
+main section:first-of-type ul:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+}
+
+main section:first-of-type ul:nth-of-type(2) li {
+  list-style-type: "";
+}
+
+main section:first-of-type ul:nth-of-type(2) a {
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  background-color: #58585b;
+  border-radius: 50%;
+}
+
+main section:first-of-type ul:nth-of-type(2) a:active {
+  background-color: white;  
+}
+
+
+
+
+/*Carousel 1 Slider 1: Epic Savings*/
+main section:first-of-type ul:first-of-type li:first-of-type {
   background-image: url(../images/Carousel1/Epic_savings.jpg);
 }
 
-main section:first-of-type li:nth-of-type(2) {
+main section:first-of-type ul:first-of-type li:first-of-type img {
+  width: 10em;
+  margin-bottom: 2em;
+}
+
+
+
+/*Carousel 1 Slider 2: TMNT*/
+main section:first-of-type ul:first-of-type li:nth-of-type(2) {
   background-image: url(../images/Carousel1/Teenage_mutant_ninja_turtles.jpg);
 }
 
-main section:first-of-type li:nth-of-type(3) {
+main section:first-of-type ul:first-of-type li:nth-of-type(2) section {
+  display: flex;  
+  align-items: center;
+
+  padding-left: 0;
+  margin-top: 1em;
+}
+
+main section:first-of-type ul:first-of-type li:nth-of-type(2) section p {
+  margin-right: .7em;
+}
+
+main section:first-of-type ul:first-of-type li:nth-of-type(2) section p:first-of-type {
+  background-color: var(--download-button-color);
+  color: #000000;
+  
+  font-weight: 500;
+
+  padding: .2em .7em;
+  border-radius: 1em;
+}
+
+main section:first-of-type ul:first-of-type li:nth-of-type(2) section p:nth-of-type(2) {
+  color: #ffffffae;
+}
+/********/
+
+
+
+/*Carousel slider 3: Apex Legends*/
+main section:first-of-type ul:first-of-type li:nth-of-type(3) {
   background-image: url(../images/Carousel1/Apex_legend.jpg);
 }
 
-main section:first-of-type li:nth-of-type(4) {
+main section:first-of-type ul:first-of-type li:nth-of-type(3) img {
+  width: 5em;
+}
+/*******/
+
+
+
+
+main section:first-of-type ul:first-of-type li:nth-of-type(4) {
   background-image: url(../images/Carousel1/Path_of_exile_2.jpg);
 }
 
-main section:first-of-type li:nth-of-type(5) {
+main section:first-of-type ul:first-of-type li:nth-of-type(5) {
   background-image: url(../images/Carousel1/Zenless_zone_zero.jpg);
 }
 
-main section:first-of-type li:nth-of-type(6) {
+main section:first-of-type ul:first-of-type li:nth-of-type(6) {
   background-image: url(../images/Carousel1/Planet_coaster_2.jpg);
 }
 
