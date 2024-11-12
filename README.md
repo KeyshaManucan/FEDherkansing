@@ -319,10 +319,16 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Gebruik display flex en @media (width > bijv 32em)
+  - flex-shrink: 0;
+  - scroll-snap-type: x mandatory; (uitzetten als scroll-behavior: smooth; aan staat)
+  scroll-snap-align: center;
+  overscroll-behaviour-x: contain;
+  scroll-behavior: smooth;
+  - id's linken aan de list items voor de carousel
+  - list-style-type:""; gebruiken in plaats van list-style: none;
+  - aria-label toevoegen aan de li bolletjes voor de carousel
+  - zeg op de html scroll-behavior: smooth; en scroll-padding-top
 
 </details>
 

@@ -25,6 +25,11 @@
 
 /**********************************/
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8em;
+}
+
 /*search button*/
 
 main nav svg:first-of-type {
@@ -85,7 +90,7 @@ main nav ul {
 
 .discoverMenu {
   display: block;
-  z-index: 100;
+  z-index: 200;
   
   background-color: var(--background-color);
   width: 100%;
@@ -119,9 +124,107 @@ main nav ul li a {
 main nav button:nth-of-type(2)[aria-label="arrow"].rotate svg {
   animation-name: arrow-animation;
   animation-duration: .3s;
-  animation-fill-mode:both;
+  animation-fill-mode: both;
   /* animation-direction: alternate; */
 }
+
+
+/*carousel 1*/
+main section:first-of-type {
+  padding: 1em;
+}
+
+main section:first-of-type ul {
+  display: flex;
+  overflow-x: auto; 
+  scrollbar-width: none;
+  
+  scroll-behavior: smooth;
+  padding: 0;
+}
+
+main section:first-of-type li {
+  display: grid;
+  display: block;
+  position: relative;
+
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 20em;
+  height: 25em;
+
+  background-size: cover ;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+
+  padding: 2em;
+  margin-right: 2em;
+}
+
+main section:first-of-type li::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  border-radius: 1em;
+  background: rgb(16,16,20);
+  background: linear-gradient(0deg, rgba(16,16,20,0.7540266106442577) 0%, rgba(255,255,255,0) 100%);
+
+}
+
+main section:first-of-type li button {
+  background: none;
+  border: none;
+}
+
+main section:first-of-type li button svg {
+  fill: var(--svg-color--);
+}
+
+main section:first-of-type li img {
+  width: 4em;
+}
+
+
+
+
+/*background images*/
+main section:first-of-type li:first-of-type {
+  background-image: url(../images/Carousel1/Epic_savings.jpg);
+}
+
+main section:first-of-type li:nth-of-type(2) {
+  background-image: url(../images/Carousel1/Teenage_mutant_ninja_turtles.jpg);
+}
+
+main section:first-of-type li:nth-of-type(3) {
+  background-image: url(../images/Carousel1/Apex_legend.jpg);
+}
+
+main section:first-of-type li:nth-of-type(4) {
+  background-image: url(../images/Carousel1/Path_of_exile_2.jpg);
+}
+
+main section:first-of-type li:nth-of-type(5) {
+  background-image: url(../images/Carousel1/Zenless_zone_zero.jpg);
+}
+
+main section:first-of-type li:nth-of-type(6) {
+  background-image: url(../images/Carousel1/Planet_coaster_2.jpg);
+}
+
+/****************/
+
+
+
+
+
+
+
 
 
 
@@ -143,23 +246,23 @@ main nav button:nth-of-type(2)[aria-label="arrow"].rotate svg {
 
 
 /*Discover something new*/
-main > section:nth-of-type(2) {
+main section:nth-of-type(2) {
   padding: 1em;
   
 }
 
-main > section:nth-of-type(2) a {
+main section:nth-of-type(2) a {
   display: flex;
   align-items: center;
 }
 
 /*hoe krijg ik de h2 in het midden?*/
-main > section:nth-of-type(2) h2 {
+main section:nth-of-type(2) h2 {
   margin: 0;
   padding-bottom: .2em;
 }
 
-main > section:nth-of-type(2) a svg {
+main section:nth-of-type(2) a svg {
   width: 1.5em;
   margin-left: .5em;
   fill: var(--svg-color--);
@@ -169,7 +272,7 @@ main a {
   text-decoration: none;
 }
 
-main > section:nth-of-type(2) ul {
+main section:nth-of-type(2) ul {
   display: flex;
   
   overflow-x: auto;
@@ -180,11 +283,11 @@ main > section:nth-of-type(2) ul {
   margin-top: 0;
 }
 
-main > section:nth-of-type(2) li {
+main section:nth-of-type(2) li {
   margin-right: 1em;
 }
 
-main > section:nth-of-type(2) ul img {
+main section:nth-of-type(2) ul img {
   display: block;
   width: auto;
   max-width: 50vw;
@@ -194,12 +297,12 @@ main > section:nth-of-type(2) ul img {
   margin-top: .5em;
 }
 
-main > section:nth-of-type(2) h4 {
+main section:nth-of-type(2) h4 {
   margin: 0;
   line-height: 1em;
 }
 
-main > section:nth-of-type(2) h5 {
+main section:nth-of-type(2) h5 {
   margin: .5em 0;
 }
 /*******************************************/
