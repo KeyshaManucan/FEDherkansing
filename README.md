@@ -330,6 +330,80 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   - aria-label toevoegen aan de li bolletjes voor de carousel
   - zeg op de html scroll-behavior: smooth; en scroll-padding-top
 
+  ### Stand van zaken
+  In mijn header heb ik twee navs, de Epic Game store logo en de hamburger menu. De Epic Game store nav werkt en nu wil ik ook de hamburger menu werkend krijgen. Dit heb ik gedaan door hetzelfde soort js en css code toe te voegen voor de hamburger menu, de namen zijn natuurlijk anders. 
+
+  Nadat ik de js code had toegevoegd voor de hamburgermenu werkte mijn logo menu niet meer. Met behulp van console.log heb ik gekeken of beide code's wel worden toegepast.
+
+  Js code van de allebei de navs:
+
+    // Epic store menu links
+    let openButton = document.querySelector("header > button:first-of-type");
+    let sluitButton = document.querySelector("header nav:first-of-type button");
+
+    openButton.onclick = openMenu;
+    sluitButton.onclick = sluitMenu;
+
+    function openMenu () {
+    let deNav = document.querySelector("header nav:first-of-type")
+    deNav.classList.add("toonMenu");
+    console.log(deNav.classList);
+    }
+
+    function sluitMenu () {
+    let deNav = document.querySelector("header nav:first-of-type");
+    deNav.classList.remove("toonMenu");
+    }
+
+    // Hamburger menu rechts
+    let hamburgermenuOpen = document.querySelector("header > button:nth-of-type(3)");
+    let hamburgermenuSluit = document.querySelector("header nav:nth-of-type(2) button:nth-of-type(2)");
+
+    hamburgermenuOpen.onclick = openHamburgermenu;
+    hamburgermenuSluit.onclick = sluitHamburgermenu;
+
+    function openHamburgermenu() {
+        let deHamburger = document.querySelector("header nav:nth-of-type(2)");
+        deHamburger.classList.add("toonHamburger");
+        console.log(deHamburger.classList);
+    }
+
+    function sluitHamburgermenu() {
+        let deHamburger = document.querySelector("header nav:nth-of-type(2)");
+        deHamburger.classList.remove("toonHamburger");
+    }
+
+  <img src="readme-images\consoleLog_header_nav1.png" width="200px" alt="Schermafbeelding van de console.log op de Epic store logo">    
+  <img src="readme-images\consoleLog_header_nav2.png" width="200px" alt="Schermafbeelding van de console.log op de hamburger menu"> 
+
+  Volgens console.log wordt de js wel toegepast maar komen beide navs niet te voorschijn. 
+
+    De CSS styling dat ik voor beide navs heb gebruikt:
+
+    /*CSS styling voor beide nav's*/
+    header nav:first-of-type,
+    header nav:nth-of-type(2) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s;   
+    background-color: var(--header-color);
+    padding: 1.3em;
+    z-index: 100;
+    overflow-y: scroll;
+    }
+
+    nav.toonMenu {
+      transform: translateY(0%);
+    }
+
+    nav.toonHamburger {
+      transform: translateY(0%);
+    }
+
 </details>
 
 
