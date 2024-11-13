@@ -1,19 +1,43 @@
 // JavaScript Document
-let openButton = document.querySelector("header > button");
-let sluitButton = document.querySelector("nav button");
+
+// Epic store menu links
+let openButton = document.querySelector("header > button:first-of-type");
+let sluitButton = document.querySelector("header nav:first-of-type button");
 
 openButton.onclick = openMenu;
 sluitButton.onclick = sluitMenu;
 
 function openMenu () {
-    let deNav = document.querySelector("nav")
+    let deNav = document.querySelector("header nav:first-of-type")
     deNav.classList.add("toonMenu");
+    console.log(deNav.classList);
 }
 
 function sluitMenu () {
-    let deNav = document.querySelector("nav");
+    let deNav = document.querySelector("header nav:first-of-type");
     deNav.classList.remove("toonMenu");
 }
+
+// Hamburger menu rechts
+let hamburgermenuOpen = document.querySelector("header > button:nth-of-type(3)");
+let hamburgermenuSluit = document.querySelector("header nav:nth-of-type(2) button:nth-of-type(2)");
+
+hamburgermenuOpen.onclick = openHamburgermenu;
+hamburgermenuSluit.onclick = sluitHamburgermenu;
+
+function openHamburgermenu() {
+    let deHamburger = document.querySelector("header nav:nth-of-type(2)");
+    deHamburger.classList.add("toonHamburger");
+    console.log(deHamburger.classList);
+}
+
+function sluitHamburgermenu() {
+    let deHamburger = document.querySelector("header nav:nth-of-type(2)");
+    deHamburger.classList.remove("toonHamburger");
+}
+
+
+
 
 // discover menu
 let discoverMenu = document.querySelector("main nav button:nth-of-type(2)")
@@ -31,6 +55,9 @@ arrowRotatie.onclick = startRotate;
 function startRotate() {
   arrowRotatie.classList.toggle("rotate");
 }
+
+
+
 
 // pagination dots voor carousel
 // const dots = document.querySelectorAll('.pagination a');

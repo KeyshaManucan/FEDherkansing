@@ -18,7 +18,7 @@
   
   header {
     display: grid;
-    grid-template-columns: 3.5em 1fr auto 6em 3em;
+    grid-template-columns: auto 1fr auto 6em 3em;
     align-items: center;
   
     background-color: var(--header-color);
@@ -29,9 +29,9 @@
   }
 
   
-  /*nav button*/
+  /*Epic games logo button*/
   header button:first-of-type img:first-of-type{
-    height: 2em;
+    height: 3em;
   }
 
   
@@ -49,7 +49,7 @@
 
  
   /*Navigatie*/
-  header nav {
+  /* header nav:first-of-type {
     position: fixed;
     left: 0;
     right: 0;
@@ -63,10 +63,10 @@
     z-index: 100;
 
     overflow-y: scroll;
-  }
+  } */
 
   
-  header nav button {
+  header nav:first-of-type button {
     z-index:100;
     padding-left: 0;
     margin-top: 1em;
@@ -97,11 +97,6 @@
   }
 
   
-  nav.toonMenu {
-    translate: 0% 0%;
-  }
-
-  
   header nav a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--font-color--);
@@ -123,7 +118,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   
-    width: 3em;
+    width: 4.5em;
   }
 
   
@@ -159,9 +154,39 @@
     justify-content: center;
   }
 
-  
-  .hamburgermenu {
+  header > button:nth-of-type(3) svg {
     fill: var(--svg-color--);
     width: 2em;
   }
+
+
+
+
+  /*CSS styling voor beide nav's*/
+  header nav:first-of-type,
+  header nav:nth-of-type(2) {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: translateY(-200%);
+      transition: transform 0.3s;   
+      background-color: var(--header-color);
+      padding: 1.3em;
+      z-index: 100;
+      overflow-y: scroll;
+  }
+  
+
+  nav.toonMenu {
+    transform: translateY(0%);
+  }
+
+  nav.toonHamburger {
+    transform: translateY(0%);
+  }
+
+
+
   
