@@ -28,6 +28,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 8em;
+  overflow-x: hidden; /*om de horizontale scrollbar onderaan mijn pagina weg te halen*/
 }
 
 /*search button*/
@@ -67,18 +68,6 @@ main nav p {
   font-weight: 600;
 }
 
-main nav button:nth-of-type(2) {
-  justify-content: center;
-}
-
-main nav button:nth-of-type(2) svg {
-  width: .5em;
-  transform: rotate(90deg);
-
-  fill: none;
-  color: var(--svg-color--);
-  z-index: -1; /*Waarom krijg je het boven de nav te zien?*/
-}
 
 /*Discover nav*/
 main nav ul {
@@ -121,6 +110,20 @@ main nav ul li a {
   100% {
     rotate: -180deg;
   }
+}
+
+main nav button:nth-of-type(2) {
+  justify-content: center;
+}
+
+main nav button:nth-of-type(2) svg {
+  width: .5em;
+  transform: rotate(90deg);
+  margin-right: 0;
+
+  fill: none;
+  color: var(--svg-color--);
+  z-index: -1; /*Waarom krijg je het boven de nav te zien?*/
 }
 
 main nav button:nth-of-type(2)[aria-label="arrow"].rotate svg {
