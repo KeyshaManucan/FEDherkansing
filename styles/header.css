@@ -8,9 +8,34 @@
     --svg-color--: #ffffff;
     --footer-background--: #202020;
     --footer-icon--: #cfcfcf;
+
+    --border-color: #404044;
   }
 
+  /*CSS styling voor beide nav's*/
+  header nav:first-of-type,
+  header nav:nth-of-type(2) {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: translateY(-200%);
+      transition: transform 0.3s;   
+      background-color: var(--header-color);
+      padding: 1.3em;
+      z-index: 100;
+      overflow-y: scroll;
+  }
+    
+    header nav:first-of-type.toonMenu {
+      transform: translateY(0);
+  }
   
+  header nav:nth-of-type(2).toonHamburger {
+      transform: translateY(0);
+  }
+
   button:not(disabled) {
     cursor:pointer;
   }
@@ -18,7 +43,8 @@
   
   header {
     display: grid;
-    grid-template-columns: auto 1fr auto 6em 3em;
+    grid-template-columns: auto 1fr auto 7em 3em;
+    gap: .5em;
     align-items: center;
   
     background-color: var(--header-color);
@@ -46,25 +72,6 @@
     color: var(--svg-color--);
   }
 
-
- 
-  /*Navigatie*/
-  /* header nav:first-of-type {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    translate: 0% -200%;
-    transition: translate .3s;
-
-    background-color: var(--header-color);
-    padding: 1.3em;
-    z-index: 100;
-
-    overflow-y: scroll;
-  } */
-
   
   header nav:first-of-type button {
     z-index:100;
@@ -72,6 +79,10 @@
     margin-top: 1em;
   }
 
+  header nav h2 {
+    margin-top: 1em;
+    font-size: 2.5em;
+  }
   
   header nav p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,19 +99,21 @@
 
   
   header nav li {
-    margin-bottom: .8em;
+    margin-bottom: 1em;
   }
 
   
   header nav h3 {
     margin: 2em 0 1em 0;
+    font-size: 1.6em;
   }
 
   
   header nav a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--font-color--);
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1.2em;
     text-decoration: none;
   }
 
@@ -123,7 +136,7 @@
 
   
   /*nav open button pijl*/
-  header nav button svg{
+  header nav:nth-of-type(1) button svg{
     transform: rotate(-90deg);
     margin: .5em;
     color: var(--svg-color--);
@@ -133,18 +146,19 @@
   /*download button*/
   header > button:nth-of-type(2) {
     grid-column: 4 / 5;
-    padding: .3em .5em;
     width: 6em;
+    height: 2em;
   
     background-color: var(--download-button-color);
     border-radius: .4em;
   
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
-    font-size: .95em;
+    font-size: 1.2em;
     text-transform: capitalize;
-  
-    /* text-align: center;  HOE KRIJG JE TEXT IN HET MIDDEN?*/
+    
+    display: flex;
+    justify-content: center;
   }
   
   
@@ -159,32 +173,110 @@
     width: 2em;
   }
 
-
-
-
-  /*CSS styling voor beide nav's*/
-  header nav:first-of-type,
+  /** HAMBURGER MENU NAV STYLING **/
   header nav:nth-of-type(2) {
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      transform: translateY(-200%);
-      transition: transform 0.3s;   
-      background-color: var(--header-color);
-      padding: 1.3em;
-      z-index: 100;
-      overflow-y: scroll;
-  }
-  
-  header nav:first-of-type.toonMenu {
-    transform: translateY(0);
-}
+    display: grid;
+    grid-template-columns: 1fr auto 5em 2em;
+    grid-template-rows: 2.5em 2.5em 10em;
+    row-gap: 2em;
 
-header nav:nth-of-type(2).toonHamburger {
-    transform: translateY(0);
-}
+    align-items: center;
+  }
+
+  header nav:nth-of-type(2) button {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*store styling*/
+  header nav:nth-of-type(2) img {
+    width: 4.5em;
+  }
+
+  /*svg kruis*/
+  header nav:nth-of-type(2) button:nth-of-type(2) {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  header nav:nth-of-type(2) button:nth-of-type(2) svg {
+    width: 2.5em;
+  }
+
+  header nav:nth-of-type(2) button:nth-of-type(2) svg path {
+    fill: var(--svg-color--);
+  }
+
+  /*svg world*/
+  header nav:nth-of-type(2) button:nth-of-type(3) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+
+    fill: var(--svg-color--);
+  }
+
+  header nav:nth-of-type(2) button:nth-of-type(3) svg{
+    width: 3em;
+  }
+
+  /*download button styling*/
+  header nav:nth-of-type(2) button:first-of-type {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+
+    width: 6em;
+    height: 2em;
+  
+    background-color: var(--download-button-color);
+    border-radius: .4em;
+  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: capitalize;
+  }
+
+  /*Sign in styling*/
+  header nav:nth-of-type(2) button:nth-of-type(4) {
+    grid-row: 2 / 3;
+    grid-column: 4 / 6;
+
+    background-color: var(--border-color);
+    color: var(--font-color--);
+
+    width: 5em;
+    height: 2em;
+    border-radius: .4em;
+
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+  /*tekst styling*/
+  header nav:nth-of-type(2) ul {
+    grid-row: 3 / 4;
+  }
+
+  header nav:nth-of-type(2) h2 {
+    margin-top: 0;
+  }
+
+  header nav:nth-of-type(2) ul li {
+    color: var(--font-color--);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+
+
+
+
+
+
+
 
 
 
