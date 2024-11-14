@@ -68,7 +68,6 @@ main nav p {
 }
 
 main nav button:nth-of-type(2) {
-  padding-left: 1.3em;
   justify-content: center;
 }
 
@@ -203,7 +202,7 @@ main section:first-of-type ul:first-of-type li button {
 
   grid-column: 3 / 4;
 
-  position: relative; /*zodat z-index werkt*/
+  position: relative; /*zodat z-index werkt. Z-index toegevoegd zodat het voor de gradient komt te staan*/
   z-index: 1;
 }
 
@@ -224,6 +223,9 @@ main section:first-of-type ul:first-of-type li a p {
   position: relative; /*zodat z-index werkt*/
   z-index: 1;
   margin: 0;
+
+  font-weight: 500;
+  text-shadow: var(--free-games-background) 1px 1px 1px;
 }
 
 main section:first-of-type ul:first-of-type li a > p:first-of-type {
@@ -497,7 +499,7 @@ main section:nth-of-type(4) article > p {
 }
 
 /*"Coming soon" text*/
-main section:nth-of-type(3) article:nth-of-type(3) a p {
+main section:nth-of-type(4) article:nth-of-type(3) a p {
   background-color: #000000;
   color: var(--font-color--);
 }
@@ -512,5 +514,107 @@ main section:nth-of-type(3) article:nth-of-type(3) a p {
 }
 
 
+/*Tabel carousel: Top Sellers, Most Played, Top Upcoming Wishlisted*/
+main section:nth-of-type(5) ul li:first-of-type a {
+  display: flex;
+  align-items: center;
+}
+
+main section:nth-of-type(5) ul li a svg {
+  fill: var(--svg-color--);
+  height: 2em;
+  margin-left: .5em;
+}
+
+main section:nth-of-type(5) ul {
+  list-style-type: "";
+  padding-left: 0;
+}
+
+
+main section:nth-of-type(5) ul li a{
+  display: grid;
+  grid-template-columns: 5em 1fr;
+  gap: 1em;
+}
+
+main section:nth-of-type(5) ul li a h3 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  margin: .5em 0;
+
+  width: 11em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main section:nth-of-type(5) ul li a p {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-top: 2.5em;
+
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+main section:nth-of-type(5) ul li:nth-of-type(2) a p:first-of-type {
+  padding: 0.3em 0.4em;
+  margin-bottom: 2em;
+
+  width: 8em;
+  height: 2em;
+  font-size: 1em;
+
+  text-align: center;
+  border-radius: .3em;
+  background-color: var(--border-color);
+}
+
+main section:nth-of-type(5) ul li:nth-of-type(2) a p:nth-of-type(2) {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 3.5em;
+}
+
+main section:nth-of-type(5) ul li img {
+  max-width: 4.5em;
+  border-radius: .5em;
+}
+
+/*Top sellers: alle lijsten naast elkaar*/
+main section:nth-of-type(5) {
+  display: flex;
+
+  overflow-x: auto; 
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 3em;
+}
+
+@media (min-width: 35em) {
+  main section:nth-of-type(5) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+main section:nth-of-type(5) ul {
+  border-right: solid 1px var(--border-color);
+  margin: 1em;
+
+  width: auto;
+}
+
+main section:nth-of-type(5) ul li {
+  width: 23em;
+  margin: 1em 0;
+}
+ 
 
 
