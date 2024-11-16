@@ -41,7 +41,7 @@
 
   h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: var(--font-color--);
     font-weight: 700;
   }
@@ -54,14 +54,8 @@
 
   h4 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2em;
-    color: var(--font-color--);
-  }
-
-  h5 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: .8em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 500;
     color: var(--game-type--);
   }
 
@@ -69,4 +63,88 @@
   p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--font-color--);
+
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+
+
+  /*Media width*/
+
+  /*Free Games*/
+  @media (min-width: 40em) {
+    main section:nth-of-type(3) {
+      display: flex;
+      justify-self: center;
+
+      flex-direction: column;
+      max-width: 73em;
+    }
+    main section:nth-of-type(3) section {
+      display: flex;
+      flex-direction: row;
+      justify-self: center;
+
+      gap: 1.5em;
+    }
+  }
+
+  /*Tabel*/
+  @media (min-width: 65em) {
+    main > ul {
+      display: none;
+    }
+    main section:nth-of-type(4) {
+      display: flex;
+      justify-self: center;
+      transform: scale(0.9);
+      width: fit-content;
+    }  
+  }
+  
+  @media (min-width: 70em) {
+    main section:nth-of-type(4) {
+      display: flex;
+      justify-self: center;
+      transform: none; 
+      width: auto;
+    } 
+  }
+  
+  /*Kleinste minimum getal moet voor zodat beide media queries werken*/
+
+  /*Carousel 2*/
+  @media (min-width: 80em) {
+    main section:nth-of-type(5) {
+      display: flex;
+      justify-content: center;
+    }
+    main section:nth-of-type(5) li,
+    main section:nth-of-type(5) li img {
+      width: 23.5em;
+    }
+    main > ul {
+      display: none;
+    }  
+  }
+
+
+  /*Trending*/
+  @media (min-width: 40em) {
+    main section:nth-of-type(6) {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+
+      max-width: 75em;
+    }
+  }
+
+  @media (min-width: 58em) {
+    main section:nth-of-type(6) section {
+      display: flex;
+      flex-direction: row;
+
+      max-width: 73em;
+    }
   }

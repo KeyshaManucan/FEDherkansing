@@ -404,6 +404,17 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
       transform: translateY(0%);
     }
 
+  Het probleem lag aan de specifity en benoeming van de selector in de css
+    
+    header nav:first-of-type.toonMenu {
+      transform: translateY(0);
+    }
+  
+    header nav:nth-of-type(2).toonHamburger {
+      transform: translateY(0);
+    } 
+  Was specifieker dan alleen .toonMenu of .toonHamburger  
+
 </details>
 
 

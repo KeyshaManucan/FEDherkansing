@@ -51,12 +51,12 @@
     align-items: center;
   }
     
-    header nav:first-of-type.toonMenu {
-      transform: translateY(0);
+  header nav:first-of-type.toonMenu {
+    transform: translateY(0);
   }
   
   header nav:nth-of-type(2).toonHamburger {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 
   button:not(disabled) {
