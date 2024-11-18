@@ -2,51 +2,66 @@
     /* startje */
   --background-color: #101014;
   --header-color: #121216;
+
   --download-button-color: #26bbff;
   --font-color--: #ffffff;
   --svg-color--: #ffffff;
+
   --footer-background--: #202020;
   --footer-icon--: #cfcfcf;
+  --footer-p: #c9c9c9;
+  --footer-nav-text: #d2d2d2;
+
+  --border-color: #404044;
 }
 
 
 footer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
 
     background-color: var(--footer-background--);
-    padding: 1.5em 1em;
+    padding: 1.5em;
 }
 
-
 footer ul {
-    list-style: none;
+    list-style-type: "";
     padding-left: 0;
 }
 
+footer li a {
+    text-decoration: none;
+    color: var(--font-color--);
+}
 
 footer svg {
     fill: var(--footer-icon--);
 }
 
 
-footer ul:first-of-type {
+/*Social iconen*/
+footer > ul:first-of-type {
     display: flex;
-    grid-column: 1/2;
 }
 
 
-footer ul:first-of-type li {
-    margin-right: .5em;
+footer > ul:first-of-type li {
+    margin-right: 1.5em; /*Social iconen meer uit elkaar dan de originele zodat je individueel makkelijker op kan klikken*/
 }
 
 
-footer ul:first-of-type svg {
-    width: 2em;
+footer > ul:first-of-type svg {
+    width: 2.5em;
 }
 
 
+/*Pijl omhoog*/
 footer > a {
-    grid-column: 2/3;
+    position: absolute;
+    top: 2em;
+    right: 2em;
 
     justify-self: flex-end;
     align-content: center;
@@ -54,13 +69,79 @@ footer > a {
     transform: rotate(-90deg);
 }
 
-
 footer > a svg {
-    border: .15em white solid;
-    width: 2em;
-    height: 2em;
+    border: .15em var(--svg-color--) solid;
+    width: 2.5em;
+    height: auto;
 }
 
+/*Nav 1 + 2*/
+footer nav:first-of-type {
+    max-width: 36em;
+}
+
+footer nav:nth-of-type(2) {
+    max-width: 23em;
+}
+
+footer nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, max-content));
+    padding: 0;
+    margin: 0;
+    column-gap: 1.5em;
+}
+
+footer nav li {
+    text-align: left;
+    white-space: nowrap;
+}
+
+footer nav h5 {
+    margin-bottom: .5em;
+}
+
+footer nav a {
+    font-size: 1.2em;
+    color: var(--footer-nav-text);
+}
+
+/*Break lijn*/
+footer hr {
+    margin: 4em 0 2em 0;
+    border-width: 0.1px 0 0 0;
+    width: 100%;
+    color: var(--border-color);
+}
+
+footer p {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--footer-p);
+}
+
+footer > ul:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4em;
+}
+
+footer > ul:nth-of-type(2) a {
+    color: var(--footer-nav-text);
+}
+
+/*logo's*/
+footer > ul:last-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer > ul:last-of-type svg{
+    width: 2em;
+}
 
 
 

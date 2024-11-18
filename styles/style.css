@@ -4,12 +4,18 @@
 :root {
   --background-color: #101014;
   --header-color: #121216;
+
   --download-button-color: #26bbff;
   --button-color: #343437;
+
   --font-color--: #ffffff;
   --game-type--: #ACACAD;
+
   --svg-color--: #ffffff;
   --search-bar: #18181c;
+
+  --shadow-color: #070707;
+
   --border-color: #404044;
 
   --free-games-font: #000000;
@@ -20,7 +26,7 @@
   --footer-background--: #202020;
   --footer-icon--: #cfcfcf;
 
-  --basis-font: Verdana, Geneva, Tahoma, sans-serif;
+  --basis-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -32,8 +38,16 @@ html {
   overflow-x: hidden; /*om de horizontale scrollbar onderaan mijn pagina weg te halen*/
 }
 
-/*search button*/
+main {
+  margin: 2em 0 7em 0;
+}
 
+
+
+
+
+
+/*search button*/
 main nav svg:first-of-type {
   color: var(--svg-color--);
   width: 1.5em;
@@ -657,7 +671,6 @@ main section:nth-of-type(4) ul:nth-of-type(3) p:first-of-type {
   color: var(--game-type--);
 }
 
-
 /*Tabel carousel: alle lijsten naast elkaar*/
 main section:nth-of-type(4) {
   display: flex;
@@ -667,7 +680,7 @@ main section:nth-of-type(4) {
   scroll-behavior: smooth;
   overscroll-behavior-x: contain;
 
-  padding: 1em;
+  padding: 1em 0 0 0;
   overflow-x: auto;
   margin-top: 3em;
 }
@@ -690,6 +703,7 @@ main > ul {
   justify-content: center;
   gap: 1em;
   padding: 0;
+  margin-top: 0;
 }
 
 main > ul li {
@@ -710,31 +724,36 @@ main > ul li a:active {
 }
 
 
+
+
+
+
+
+
 /*Carousel 2*/
-main section:nth-of-type(5) {
-  margin-top: 5em;
+main section:nth-of-type(5) ul:first-of-type {
   display: flex;
   overflow-x: auto;  
-
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
   scrollbar-width: none;
+
+  margin-top: 2em;
   padding: 1em;
-  
+  gap: 1em;    
 }
 
-main section:nth-of-type(5) ul {
-  display: flex;
-  gap: 1em;
-  padding-left: 0;
-}
-
-main section:nth-of-type(5) ul li {
+main section:nth-of-type(5) ul:first-of-type li {
+  scroll-snap-align: start;
   list-style-type: "";
   max-width: 27em;
 }
 
-main section:nth-of-type(5) ul li a img {
+main section:nth-of-type(5) ul:first-of-type li a img {
   max-width: 27em;
   border-radius: 1em;
+
+  box-shadow: var(--shadow-color) .3em .3em 1em;
 }
 
 
@@ -749,11 +768,11 @@ main section:nth-of-type(5) p:first-of-type {
 
 
 /*Plus button carousel 2*/
-main section:nth-of-type(5) ul li {
+main section:nth-of-type(5) ul:first-of-type li {
   position: relative;
 }
 
-main section:nth-of-type(5) ul li a > button {
+main section:nth-of-type(5) ul:first-of-type li a > button {
   position: absolute;
   top: .5em;
   right: .5em;
@@ -762,7 +781,7 @@ main section:nth-of-type(5) ul li a > button {
   border: none;
 }
 
-main section:nth-of-type(5) ul li a > button svg {
+main section:nth-of-type(5) ul:first-of-type li a > button svg {
   fill: var(--svg-color--);
   background-color: #00000053;
   border-radius: 2em;
@@ -770,7 +789,7 @@ main section:nth-of-type(5) ul li a > button svg {
 }
 
 /*wishlist now button*/
-main section:nth-of-type(5) li:last-of-type article button {
+main section:nth-of-type(5) ul:first-of-type :last-of-type article button {
   background-color: var(--button-color);
   color: var(--font-color--);
   height: 3em;
@@ -779,6 +798,32 @@ main section:nth-of-type(5) li:last-of-type article button {
   border-radius: .5em;
 
   font-size: 1em;
+}
+
+/*Carousel 2 dot pagination*/
+main section:nth-of-type(5) ul:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  margin-top: 0;
+}
+
+main section:nth-of-type(5) ul:nth-of-type(2) li {
+  list-style-type: "";
+}
+
+
+main section:nth-of-type(5) ul:nth-of-type(2) li a {
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  background-color: #58585b;
+  border-radius: 50%;
+}
+
+main section:nth-of-type(5) ul:nth-of-type(2) li a:active {
+  background-color: white;  
 }
 
 
@@ -922,3 +967,74 @@ main section:nth-of-type(6) section article:nth-of-type(3) p {
 } 
 
 
+
+
+
+/*Carousel 3*/
+main section:nth-of-type(7) ul:first-of-type {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+
+  gap: 1.5em;
+  padding: 1em;
+  margin-top: 3em;
+
+  height: 32em;
+}
+
+
+main section:nth-of-type(7) ul:first-of-type li{
+  list-style-type: "";
+  position: relative;
+
+  scroll-snap-align: start;
+}
+
+main section:nth-of-type(7) ul:first-of-type img {
+  width: 30em;
+  border-radius: 1em;
+  box-shadow: var(--shadow-color) .3em .3em 1em;
+}
+
+main section:nth-of-type(7) ul:first-of-type button {
+  position: absolute;
+  bottom: 0;
+
+  background-color: var(--button-color);
+  color: var(--font-color--);
+  border: none;
+  border-radius: .5em;
+
+  padding: 1em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/*Carousel 3 dot pagination*/
+main section:nth-of-type(7) ul:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  margin-top: 0;
+}
+
+main section:nth-of-type(7) ul:nth-of-type(2) li {
+  list-style-type: "";
+}
+
+
+main section:nth-of-type(7) ul:nth-of-type(2) li a {
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  background-color: #58585b;
+  border-radius: 50%;
+}
+
+main section:nth-of-type(7) ul:nth-of-type(2) li a:active {
+  background-color: white;  
+}
