@@ -13,7 +13,10 @@
       /* startje */
     --background-color: #101014;
     --header-color: #121216;
+
     --download-button-color: #26bbff;
+    --hover-outline-color: #f8f8f8;
+
     --font-color--: #ffffff;
     --game-type--: #ACACAD;
     --svg-color--: #ffffff;
@@ -34,6 +37,8 @@
     margin: 0;
   }
 
+
+  /*Basis tekst styling*/
   h1 {
     font-family: var(--basis-font);
     font-weight: 500;
@@ -69,10 +74,6 @@
     color: rgb(101, 101, 101);
   }
 
-  a {
-    font-family: var(--basis-font);
-  }
-
   p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--font-color--);
@@ -82,7 +83,115 @@
   }
 
 
+  /*Button en links styling*/
+  a {
+    font-family: var(--basis-font);
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+
   /*Media width*/
+  @media (min-width: 80em) {
+    main > section:first-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 75em;
+    }
+    main > section:first-of-type ul:first-of-type li {
+      width: 50em;
+      height: 30em;
+      padding: 2em;
+    }
+    main section:first-of-type ul:first-of-type li {
+      display: grid;
+      grid-template-columns: 15em 3em 1fr;
+      grid-template-rows: 1fr 4em;
+  
+      padding: 3em;
+    }
+    main section:first-of-type ul:first-of-type a {
+      grid-column: span 3;
+      grid-row: 1/ 2;
+    }
+    main section:first-of-type ul:first-of-type p {
+      max-width: 25em;
+      font-size: 1.3em;
+    }
+    main section:first-of-type ul:first-of-type li a > p:first-of-type {
+      font-size: 1.1em;
+    }
+
+   /*Plus button*/
+   main section:first-of-type ul:first-of-type li > button:first-of-type {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    margin-top: .75em;
+    
+    }    
+
+    /*Eerste slide button*/
+    main section:first-of-type ul:first-of-type li:first-of-type button {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+
+      background-color: var(--font-color--);
+      border: none;
+      border-radius: .6em;
+    
+      padding: 1em 1.5em;
+      
+    
+      font-size: 1.2em;
+      font-weight: 500;
+    
+      position: relative;
+      z-index: 1;
+    }
+    main section:first-of-type ul:first-of-type li > button:first-of-type svg {
+      width: 1.7em;
+    }
+
+    main section:first-of-type ul:first-of-type li > p {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+
+    /*Call-to-action button*/
+    main section:first-of-type ul:first-of-type li > button:last-of-type {
+      display: block;
+      margin: 0 2em 0 0;
+
+      background-color: var(--font-color--);
+      border: none;
+      border-radius: .6em;
+    
+      padding: 1em 1.5em;
+    
+      font-size: 1.2em;
+      font-weight: 500;
+    
+      position: relative;
+      z-index: 1;
+    }
+    main section:first-of-type ul:first-of-type li a p:last-of-type {
+      margin: 1em 0;
+    }
+
+    /*Discover something new*/
+    main section:nth-of-type(2) {
+      width: 75em;
+
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+  }
+
 
   /*Free Games*/
   @media (min-width: 40em) {
@@ -92,6 +201,7 @@
 
       flex-direction: column;
       max-width: 73em;
+      padding: 0 1em 1em 1em;
     }
     main section:nth-of-type(3) section {
       display: flex;
@@ -138,15 +248,33 @@
     main section:nth-of-type(7) ul:last-of-type {
       display: none;
     }
-  }
-  
+    /*Hover effect*/
+    main section:nth-of-type(5) ul:first-of-type li a:hover img {
+      box-shadow: var(--hover-outline-color) .1em .1em .1em;
+    }
+    main section:nth-of-type(5) ul:first-of-type li a > button svg {
+      display: none;
+    }
+    
+    main section:nth-of-type(5) ul:first-of-type li a:hover > button svg {
+      display: block;
+      fill: var(--svg-color--);
+      background-color: #00000053;
+      border-radius: 2em;
+      width: 3em;
+    } 
+    main section:nth-of-type(5) ul:first-of-type li a > button:hover svg {
+      background-color: var(--download-button-color);
+    }    
+  } 
+
   @media (min-width: 80em) {
     main section:nth-of-type(4) {
       display: flex;
       justify-content: center;
       transform: none; 
       width: auto;
-    } 
+    }
   }
   
   /*Kleinste minimum getal moet voor zodat beide media queries werken*/
@@ -191,6 +319,9 @@
       max-width: 73em;
     }
   }
+
+  
+
 
 
 

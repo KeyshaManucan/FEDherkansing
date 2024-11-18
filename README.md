@@ -415,11 +415,12 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
     } 
   Was specifieker dan alleen .toonMenu of .toonHamburger 
 
-  Aantekeningen:
+  ### Aantekeningen:
   - Overscroll-x:auto werkt niet meer als ik width: 100% doe, hierdoor worden de carousellen niet responsive.
   - Rond 737px scherm width werkt de scroll-snap-align:start niet bij carousel 3 tweede list item.
   - In toggle device toolbar mode kan de pagina naar links en rechts verschuiven, dit moet niet. 
-  - In de footer overlapt de tekst 
+  - In de footer overlapt de tekst heel even als je de resolutie van het scherm verkleint
+  - @media voor de footer werd niet toegepast toen ik het in de base.css aanriep, maar werkte wel toen ik @media naar de footer.css verplaatste
 
 </details>
 

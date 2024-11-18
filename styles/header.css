@@ -208,6 +208,11 @@
     display: flex;
     justify-content: center;
   }
+
+  header > button:nth-of-type(2):active {
+    box-shadow: inset 0 .2em .7em var(--header-color);
+    transform: translateY(1px);
+  }
   
   
   /*hamburger menu*/
