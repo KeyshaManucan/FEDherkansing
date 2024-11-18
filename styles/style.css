@@ -211,9 +211,6 @@ main section:first-of-type ul:first-of-type li > button:last-of-type:hover {
   color: var(--free-games-font);
 }
 
-
-
-
 /*Plus button*/
 main section:first-of-type ul:first-of-type li > button:first-of-type {
   background: none;
@@ -358,7 +355,7 @@ main section:nth-of-type(2) {
   padding: 1em;
 }
 
-main section:nth-of-type(2) a {
+main section:nth-of-type(2) > a {
   display: flex;
   align-items: center;
 }
@@ -388,10 +385,11 @@ main section:nth-of-type(2) ul {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
+
+  gap: 1em;
 }
 
-main section:nth-of-type(2) li {
-  margin-right: 1em;
+main section:nth-of-type(2) li a {
   display: flex;
   flex-direction: column;
 }
