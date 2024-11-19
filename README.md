@@ -420,8 +420,10 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   - Rond 737px scherm width werkt de scroll-snap-align:start niet bij carousel 3 tweede list item.
   - In toggle device toolbar mode kan de pagina naar links en rechts verschuiven, dit moet niet. 
   - In de footer overlapt de tekst heel even als je de resolutie van het scherm verkleint
-  - @media voor de footer werd niet toegepast toen ik het in de base.css aanriep, maar werkte wel toen ik @media naar de footer.css verplaatste
+  - @media voor de footer werd niet toegepast toen ik het in de home.css aanriep, maar werkte wel toen ik @media naar de footer.css verplaatste
+  - Elke keer als ik backdrop-filter:blur() aan mijn header toevoeg op de Unreal Engine pagoma, breekt het mijn nav menu's en klappen ze niet meer volledig uit.
 
+ 
 </details>
 
 
@@ -446,6 +448,8 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
+  Ik had vaak moeite met de juiste container vinden, bijvboorbeeld bij de Titels en buttons van elke nieuwe sectie. Om ruimte tussen de titel en button te zetten maakte ik gebruik van 'justify-content: space-between', maar om hier goed gebruik van te kunnen maken heb ik een container om de elementen heen. Hier gebruikte ik vaak article, maar ik vind zelf dat het geen article is omdat het alleen een titel en button is. 
+
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
@@ -462,8 +466,24 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  
+  Voor uitleg over de code en vragen over de code:
+  - [ChatGPT.com](https://chatgpt.com/)
+
+  Font voor de 'Store' h1 op de homepagina:
+  - https://www.dafont.com/bebas-neue.font
+
+  Font voor de 'Unreal Engine' h1 op de Unreal Engine pagina:
+  - https://www.dafont.com/mortend.font
+
+  Svg's dat ik niet uit de website zelf kon halen, had ik hier vandaan:
+  - https://www.svgrepo.com/
+
+  Voor het maken van de donkere overlay op de background img in de eerste carousel op de Epic Games homepagina, volgende ik een YouTube video en gebruikte ik de content hiervan als basis voor mijn code:
+  - https://www.youtube.com/watch?v=Mc-lxxGeWQI&t=179s
+
+  Voor het maken van de 'show more' 'show les' functie op de Unreal Engine pagina maakte ik gebruik van voorbeelden uit codepen en van ChatGPT om de code te verbeteren die uit codepen kwam:
+  - https://codepen.io/zepzia/pen/VPrXJJ
+  - [Chatgpt.com](https://chatgpt.com/)
 
 </details>
