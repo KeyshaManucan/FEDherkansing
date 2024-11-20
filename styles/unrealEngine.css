@@ -4,9 +4,11 @@
     --header-ue: #121216f0;
   
     --download-button-color: #26bbff;
+    --download-button-hover: #ff62cd;
     --button-color: #343437;
     --button-hover: #bababa40;
     --button-hover-border: #bebec5;
+    --link-hover: #ffa6e3;
   
     --font-color--: #ffffff;
     --font-color-2: #9e9e9f;
@@ -127,6 +129,11 @@ main > section:first-of-type li:first-of-type a {
     justify-content: center;
 }
 
+main > section:first-of-type li:first-of-type a:hover {
+    background-color: var(--download-button-hover);
+}
+
+
 main > section:first-of-type li:nth-of-type(2) a {
     color: var(--font-color--);
     font-weight: 500;
@@ -140,6 +147,12 @@ main > section:first-of-type li:nth-of-type(2) a {
     align-items: center;
     justify-content: center;
 }
+
+main > section:first-of-type li:nth-of-type(2) a:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover-border) .2em;
+}
+
 
 main > section:first-of-type p {
     line-height: 1.5em;
@@ -181,7 +194,11 @@ main > section:nth-of-type(2) > article a {
 
     width: 6em;
     padding: 0.8em;
+}
 
+main > section:nth-of-type(2) > article a:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover-border) .2em;
 }
 
 /*List items*/
@@ -196,6 +213,10 @@ main > section:nth-of-type(2) ul {
 main > section:nth-of-type(2) li {
     background-color: var(--free-games-background);
     border-radius: .5em;
+}
+
+main > section:nth-of-type(2) li:hover {
+    background-color: var(--button-hover);
 }
 
 main > section:nth-of-type(2) a {
@@ -410,7 +431,8 @@ main section:nth-of-type(4) label {
 
     font-family: var(--basis-font);
     color: var(--font-color--);
-    
+
+    cursor: pointer;
 }
 
 main section:nth-of-type(4) label input {
@@ -423,6 +445,7 @@ main section:nth-of-type(4) label:has(input:checked) {
     background: var(--button-color);
     padding: 1em;
     border-radius: .5em;
+    font-weight: 700;
 }
 
 main section:nth-of-type(4) section {
@@ -445,8 +468,19 @@ main section:nth-of-type(4) > section:first-of-type {
     padding: 1.5em;
 }
 
+/*article styling*/
 main section:nth-of-type(4) > section:first-of-type section article {
     margin: 2em 0;
+}
+
+main section:nth-of-type(4) > section:first-of-type section article img {
+    box-shadow: var(--shadow-color) .2em .2em .5em;
+}
+
+main section:nth-of-type(4) > section:first-of-type section article:hover {
+    background-color: var(--button-color);
+    padding: 2em;
+    border-radius: .5em;
 }
 
 main section:nth-of-type(4) > section:first-of-type > article:first-of-type {
@@ -465,6 +499,13 @@ main section:nth-of-type(4) > section:first-of-type > article:first-of-type a {
     border: var(--border-color) solid .1em;
     border-radius: .5em;
 }
+
+main section:nth-of-type(4) > section:first-of-type > article:first-of-type a:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover-border) .2em;
+}
+/**************************/
+
 
 main section:nth-of-type(4) img {
     width: 100%;
@@ -551,12 +592,27 @@ main section:nth-of-type(4) > section:first-of-type > article:last-of-type li:la
     background-color: var(--border-color);
 }
 
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type li:last-of-type a:hover {
+    background-color: var(--download-button-hover);
+    color: var(--free-games-font);
+}
+
+
 main section:nth-of-type(4) > section:first-of-type > article:last-of-type ul li p {
     color: var(--download-button-color);
     margin: 0;
 }
 
-main section:nth-of-type(4) > section:first-of-type svg {
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type ul li a:hover p {
+    color: var(--link-hover);
+}
+
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type ul li a:hover svg {
+    fill: var(--link-hover);
+}
+
+
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type ul li a svg  {
     fill: var(--download-button-color);
     width: 1.5em;
 }
@@ -580,11 +636,21 @@ main section:nth-of-type(4) > section:last-of-type > a {
     padding: .5em 1em;
 }
 
+main section:nth-of-type(4) > section:last-of-type > a:hover {
+    background-color: var(--button-hover);
+    border: var(--button-hover-border) solid .1em;
+}
+
+
 main section:nth-of-type(4) button.expanded svg {
     transform: rotate(-90deg);
 }
 
-
+main section:nth-of-type(4) > section:last-of-type section article:hover {
+    background-color: var(--button-color);
+    padding: 1em;
+    border-radius: .5em;
+}
 
 
 
@@ -597,6 +663,10 @@ main section:nth-of-type(5) {
 main section:nth-of-type(5) > p {
     color: var(--font-color-2);
     line-height: 1.5em;
+}
+
+main section:nth-of-type(5) a:hover {
+    color: var(--download-button-hover);
 }
 
 main section:nth-of-type(5) > p a {
@@ -674,11 +744,20 @@ main section:nth-of-type(5) > article ul:last-of-type li a {
     color: var(--download-button-color);
 }
 
+main section:nth-of-type(5) > article ul:last-of-type li a:hover {
+    color: var(--download-button-hover);
+}
+
 main section:nth-of-type(5) > article ul:last-of-type li:first-of-type {
     padding: 1em;
     background-color: var(--download-button-color);
     border-radius: .5em;
 }
+
+main section:nth-of-type(5) > article ul:last-of-type li:first-of-type:hover {
+    background-color: var(--download-button-hover);
+}
+
 
 main section:nth-of-type(5) > article ul:last-of-type li:first-of-type a {
     color: var(--free-games-font);
@@ -710,6 +789,19 @@ main section:nth-of-type(5) > a {
     background-color: var(--button-color);
     padding: 1em;
     border-radius: 1em;
+}
+
+main section:nth-of-type(5) > a:hover {
+    background-color: var(--download-button-color);
+}
+
+main section:nth-of-type(5) > a:hover p {
+    color: var(--free-games-font);
+    font-weight: 700;
+}
+
+main section:nth-of-type(5) > a:hover svg {
+    fill: var(--free-games-font);
 }
 
 main section:nth-of-type(5) > a svg {

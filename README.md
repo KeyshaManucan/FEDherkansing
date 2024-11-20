@@ -437,17 +437,38 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Homepage
+  <img src="readme-images\homepage_computerscherm.png" width="375px" alt="uitomst pagina 1">
+  <img src="readme-images\homepage_mobile.png" width="375px" alt="uitomst pagina 1">
+
+  Unreal Engine
+  <img src="readme-images\UnrealEngine_computerscherm.png" width="375px" alt="uitomst pagina 2">
+  <img src="readme-images\UnrealEngine_mobile.png" width="375px" alt="uitomst pagina 2">
+
+
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  Ik heb veel nieuwe kennis opgebouwd, vooral met het responsive maken van de website, svg's bijwerken en handmatig fonts toevoegen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik maakte veel gebruikt van de media query om de twee pagina's responsive te maken.
+  <img src="readme-images\media.png" width="375px" alt="css media query">
+
+  Verder snap ik nu het positioneren van elementen veel beter met behulp van grid en position:absolute/fixed. Hiervoor gebruikte ik alleen voor flexbox en nu kan ik ze alle drie combineren.
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+
+  Ik heb uiteindelijk geen dark en light mode kunnen maken. Ik had de stappen op dlo gevolgd maar mijn dark en light mode werkte nog steeds niet, en dit vind ik erg jammer. 
+
+  <img src="readme-images\light-dark_mode_probleem.png" width="375px" alt="dark en light mode op de pagina werkt niet">
+
+  <img src="readme-images\light-dark_probleem.png" width="375px" alt="dark en light mode in css>
+
+  <img src="readme-images\light-dark_probleem2.png" width="375px" alt="dark en light mode in html">
 
   Ik had vaak moeite met de juiste container vinden, bijvboorbeeld bij de Titels en buttons van elke nieuwe sectie. Om ruimte tussen de titel en button te zetten maakte ik gebruik van 'justify-content: space-between', maar om hier goed gebruik van te kunnen maken heb ik een container om de elementen heen. Hier gebruikte ik vaak article, maar ik vind zelf dat het geen article is omdat het alleen een titel en button is. 
 
@@ -455,6 +476,7 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 
   <img src="readme-images\display_block.png" width="375px" alt="probleem met oplossing vinden voor display:block">
 
+  Het toevoegen van een padding als je over een artikel heen hovert zorgt ervoor dat de elementen eromheen een beetje verschuiven. Dit heb ik niet kunnen fixen en de oplossing voor kunnen vinden. Dit is het geval bij de Unreal Engine pagina 'tutorials' en 'sample projects'.
   
 </details>
 
@@ -490,5 +512,8 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   Voor het maken van de 'show more' 'show les' functie op de Unreal Engine pagina maakte ik gebruik van voorbeelden uit codepen en van ChatGPT om de code te verbeteren die uit codepen kwam:
   - https://codepen.io/zepzia/pen/VPrXJJ
   - [Chatgpt.com](https://chatgpt.com/)
+
+  In de Unreal Engine footer maak ik gebruik van de elementen 'details' en 'summary'. Hierbij heb ik online gezocht naar hoe je de element kan bewerken zodat het lijkt op nav van Unreal Engine:
+  - https://www.sitepoint.com/style-html-details-element/
 
 </details>

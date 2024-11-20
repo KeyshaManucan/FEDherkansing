@@ -4,7 +4,10 @@
   
     --download-button-color: #26bbff;
     --font-color--: #ffffff;
+    --font-color-2: #9e9e9f;
+
     --svg-color--: #ffffff;
+    --social-icon: #aeaeb0;
   
     --footer-background--: #18181c;
     --footer-icon--: #cfcfcf;
@@ -12,18 +15,155 @@
     --footer-nav-text: #d2d2d2;
   
     --border-color: #404044;
+    --basis-font: 'Epic Games Font, Normal';
 }
+
+@font-face {
+    font-family: 'Epic Games Font, Normal';
+    src: url('/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2');
+  }
 
 footer {
     background-color: var(--footer-background--);
+    padding: 3em 1.5em;
 }
 
+footer a:hover {
+    color: var(--font-color--);
+}
+
+footer section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 footer section:first-of-type svg {
     width: 15em;
 }
 
+footer section:first-of-type ul {
+    display: flex;
+    gap: 1em;
+    margin: 2em 0;
+}
+
 footer section:first-of-type ul li svg {
-    fill: var(--svg-color--);
+    fill: var(--social-icon);
     width: 2em;
 }
+
+footer section:first-of-type a:hover svg {
+    fill: var(--font-color--);
+}
+
+
+/*De nav*/
+footer nav details {
+    border-bottom: var(--border-color) solid .1em;
+    padding: 1em 0;
+}
+
+footer nav details:first-of-type {
+    border-top: var(--border-color) solid .1em;
+}
+
+footer nav details summary {
+    color: var(--font-color--);
+    font-family: var(--basis-font);
+    font-size: 1.3em;
+    font-weight: 700;
+
+    list-style: none;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav details summary svg {
+    fill: var(--svg-color--);
+    transform: rotate(90deg);
+    transition: .2s ease-in;
+}
+
+footer nav details[open] summary svg {
+    transform: rotate(-90deg);
+    transition: .2s ease-in;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer a {
+    color: var(--font-color-2);
+}
+
+/*******************/
+
+footer section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section:last-of-type > p  {
+    text-align: center;
+    color: var(--font-color-2);
+    font-size: .8em;
+    margin: 4em 0;
+}
+
+footer section:last-of-type ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+footer section:last-of-type > a {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    margin: 3em;
+    width: 10em;
+    border-radius: .5em;
+
+    background-color: var(--border-color);
+}
+
+footer section:last-of-type > a:hover {
+    background-color: var(--download-button-color);
+}
+
+footer section:last-of-type > a p {
+    color: var(--font-color--);
+}
+
+footer section:last-of-type > a:hover p {
+    color: var(--header-color);
+}
+
+footer section:last-of-type svg {
+    width: 1.5em;
+    height: auto;
+    fill: var(--svg-color--);
+
+    transform: rotate(-90deg);
+}
+
+footer section:last-of-type > a:hover svg {
+    fill: var(--header-color);
+}
+
+
+
+

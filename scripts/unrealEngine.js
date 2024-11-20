@@ -1,4 +1,4 @@
-//Bij deze code maakte ik gebruik van bronnen om het te maken.
+//Bij deze code maakte ik gebruik van bronnen om het te maken en zelf aangepast als nodig.
 //Bronnen:
 // - https://codepen.io/zepzia/pen/VPrXJJ
 // - ChatGPT.com
