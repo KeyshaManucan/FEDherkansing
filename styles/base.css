@@ -83,7 +83,7 @@
   }
 
   h3 {
-    font-family: var(--basis-font-bold);
+    font-family: var(--basis-font);
     font-size: 1.3em;
     color: var(--font-color--);
   }
@@ -104,6 +104,10 @@
 
   ul {
     list-style-type: "";
+  }
+
+  li {
+    font-family: var(--basis-font);
   }
 
   p {

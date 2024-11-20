@@ -1,0 +1,29 @@
+:root {
+    --background-color: #101014;
+    --header-color: #121216;
+  
+    --download-button-color: #26bbff;
+    --font-color--: #ffffff;
+    --svg-color--: #ffffff;
+  
+    --footer-background--: #18181c;
+    --footer-icon--: #cfcfcf;
+    --footer-p: #c9c9c9;
+    --footer-nav-text: #d2d2d2;
+  
+    --border-color: #404044;
+}
+
+footer {
+    background-color: var(--footer-background--);
+}
+
+
+footer section:first-of-type svg {
+    width: 15em;
+}
+
+footer section:first-of-type ul li svg {
+    fill: var(--svg-color--);
+    width: 2em;
+}

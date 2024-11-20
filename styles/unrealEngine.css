@@ -105,14 +105,21 @@ main > section:first-of-type {
     padding: 1.5em;
 }
 
-main > section:first-of-type a:first-of-type {
+main > section:first-of-type ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em 0 4em 0;
+}
+
+main > section:first-of-type li:first-of-type a {
     background-color: var(--download-button-color);
     color: var(--free-games-font);
     font-weight: 500;
 
     width: 7.5em;
     border-radius: .5em;
-    margin: 2em 0 1em 0;
     padding: .8em;
 
     display: flex;
@@ -120,7 +127,7 @@ main > section:first-of-type a:first-of-type {
     justify-content: center;
 }
 
-main > section:first-of-type a:nth-of-type(2) {
+main > section:first-of-type li:nth-of-type(2) a {
     color: var(--font-color--);
     font-weight: 500;
 
@@ -132,8 +139,6 @@ main > section:first-of-type a:nth-of-type(2) {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin-bottom: 4em;
 }
 
 main > section:first-of-type p {
@@ -144,6 +149,12 @@ main > section:first-of-type video {
     border-radius: 1em;
 }
 
+main > section:first-of-type svg {
+    width: auto;
+    height: 2.5em;
+
+    display: none;
+}
 
 
 
@@ -169,7 +180,7 @@ main > section:nth-of-type(2) > article a {
     border-radius: .5em;
 
     width: 6em;
-    padding: .8em;
+    padding: 0.8em;
 
 }
 
@@ -271,6 +282,11 @@ main > section:nth-of-type(3) ul {
 
 main > section:nth-of-type(3) a {
     position: relative;
+    width: 100%;
+
+    display: inline-block;
+    overflow: hidden;
+    border-radius: .5em;
 }
 
 main > section:nth-of-type(3) figure {
@@ -304,8 +320,28 @@ main > section:nth-of-type(3) img {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 
     border-radius: .5em;
+}
+
+main > section:nth-of-type(3) a::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  
+    border-radius: 1em;
+    background: var(--background-color);
+    background: linear-gradient(0deg, #101014c0 30%, #ffffff00 100%);
+}
+
+main > section:nth-of-type(3) a:hover img{
+    transform: scale(1.2);
 }
 
 /*Show more button*/
@@ -334,16 +370,10 @@ main > section:nth-of-type(3) button.expanded svg {
     transform: rotate(-90deg);
 }
 
-/*Lijst styling voor js*/
-main > section:nth-of-type(3) li:nth-child(n+4) {
-    display: none; /* Hide items from the 4th one onwards */
-}
-
 
 
 
 /*How to get started in UE section 4*/
-
 /*Introductie*/
 main section:nth-of-type(4) {
     background-color: var(--search-bar);
@@ -363,54 +393,71 @@ main section:nth-of-type(4) p {
     line-height: 1.5em;
 }
 
-main section:nth-of-type(4) > ul {
-    margin: 1em 1.5em 2em 1.5em;
-    padding: 0;
-
+/*Tutorials*/
+/* form*/
+main section:nth-of-type(4) form {
     display: flex;
     align-items: center;
-    overflow-x: auto;
-    gap: 3em;
+    gap: 2em;
 
+    overflow-x: auto;
     scrollbar-width: none;
 }
 
-main section:nth-of-type(4) > ul li {
+main section:nth-of-type(4) label {
+    position: relative;
     white-space: nowrap;
-}
 
-main section:nth-of-type(4) > ul li:first-of-type {
-    padding: .7em .9em;
-    border-radius: .5em;
-    background-color: var(--border-color);
-}
-
-main section:nth-of-type(4) > ul li a {
+    font-family: var(--basis-font);
     color: var(--font-color--);
+    
 }
 
+main section:nth-of-type(4) label input {
+    appearance:none;
+	position:absolute;
+    cursor: pointer;
+}
+
+main section:nth-of-type(4) label:has(input:checked) {
+    background: var(--button-color);
+    padding: 1em;
+    border-radius: .5em;
+}
+
+main section:nth-of-type(4) section {
+    width: 100%;
+    display: block;
+}
+
+/*labels not checked*/
+main section:nth-of-type(4) section:has([value="games"]:checked) section:not(.games) {
+    display: none;
+}
+
+main section:nth-of-type(4) section:has( [value="editor"]:checked ) section:not(.editor) {
+    display: none;
+}
+/********/
 
 
-/*Tutorials*/
-main section:nth-of-type(4) section:first-of-type {
+main section:nth-of-type(4) > section:first-of-type {
     padding: 1.5em;
 }
 
-main section:nth-of-type(4) section:first-of-type article {
-    margin-bottom: 2.5em;
-}
-
-main section:nth-of-type(4) section:first-of-type article:first-of-type {
-    display: flex;
-    justify-content: space-between;
-
+main section:nth-of-type(4) > section:first-of-type section article {
     margin: 2em 0;
 }
 
-main section:nth-of-type(4) section:first-of-type article:first-of-type a {
+main section:nth-of-type(4) > section:first-of-type > article:first-of-type {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+main section:nth-of-type(4) > section:first-of-type > article:first-of-type a {
+    display: flex;
+    justify-content: flex-end;
     
     color: var(--font-color--);
     width: max-content;
@@ -439,10 +486,6 @@ main section:nth-of-type(4) h3 {
     margin: 1em 0 0 0;
 }
 
-main section:nth-of-type(4) p {
-    margin: .5em 0;
-}
-
 /*Show more button*/ 
 main section:nth-of-type(4) button {
     background: none;
@@ -463,15 +506,20 @@ main section:nth-of-type(4) button svg {
     fill: var(--download-button-color);
     width: 1.5em;
     transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+main section:nth-of-type(4) button.expanded svg {
+    transform: rotate(-90deg);
 }
 
 
 /*Documentation*/
-main section:nth-of-type(4) section:nth-of-type(2) {
-    padding: 1.5em;
+main section:nth-of-type(4) > section:first-of-type > article {
+    margin-top: 2em;
 }
 
-main section:nth-of-type(4) section:nth-of-type(2) ul{
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type ul{
     margin: 1.5em 0;
     padding: 2em;
     background-color: var(--free-games-background);
@@ -482,16 +530,16 @@ main section:nth-of-type(4) section:nth-of-type(2) ul{
     gap: .5em;
 }
 
-main section:nth-of-type(4) section:nth-of-type(2) li a {
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type li a {
     display: flex;
 }
 
-main section:nth-of-type(4) section:nth-of-type(2) li:first-of-type p {
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type ul li:first-of-type p {
     color: var(--font-color--);
     margin-bottom: 1em;
 }
 
-main section:nth-of-type(4) section:nth-of-type(2) li:last-of-type a {
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type li:last-of-type a {
     margin-top: .5em;
     padding: .7em;
 
@@ -503,28 +551,27 @@ main section:nth-of-type(4) section:nth-of-type(2) li:last-of-type a {
     background-color: var(--border-color);
 }
 
-main section:nth-of-type(4) section:nth-of-type(2) p {
+main section:nth-of-type(4) > section:first-of-type > article:last-of-type ul li p {
     color: var(--download-button-color);
     margin: 0;
 }
 
-main section:nth-of-type(4) section:nth-of-type(2) svg {
+main section:nth-of-type(4) > section:first-of-type svg {
     fill: var(--download-button-color);
     width: 1.5em;
 }
 
 
 /*Sample Projects*/
-main section:nth-of-type(4) section:last-of-type {
+main section:nth-of-type(4) > section:last-of-type {
     padding: 1.5em;
 }
 
-main section:nth-of-type(4) section:last-of-type > p {
-    margin-bottom: 3em;
+main section:nth-of-type(4) > section:last-of-type article {
+    margin: 2.5em 0 0 0;
 }
 
-
-main section:nth-of-type(4) section:last-of-type > a {
+main section:nth-of-type(4) > section:last-of-type > a {
     color: var(--font-color--);
     border: var(--border-color) solid .1em;
     border-radius: .5em;
@@ -533,13 +580,288 @@ main section:nth-of-type(4) section:last-of-type > a {
     padding: .5em 1em;
 }
 
-main section:nth-of-type(4) section:last-of-type article {
-    margin: 2.5em 0;
+main section:nth-of-type(4) button.expanded svg {
+    transform: rotate(-90deg);
 }
 
 
 
 
+
+/*Licensing section 5*/
+main section:nth-of-type(5) {
+    padding: 1.5em;
+    margin-top: 3em;
+}
+
+main section:nth-of-type(5) > p {
+    color: var(--font-color-2);
+    line-height: 1.5em;
+}
+
+main section:nth-of-type(5) > p a {
+    color: var(--download-button-color);
+    text-decoration: underline;
+}
+
+main section:nth-of-type(5) > h3 {
+    margin-top: 3em;
+}
+
+main section:nth-of-type(5) > article {
+    background-color: var(--free-games-background);
+    border: var(--download-button-color) solid .1em;
+    border-radius: 1em;
+    padding: 3em;
+}
+
+main section:nth-of-type(5) article h3 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+main section:nth-of-type(5) article ul {
+    padding-left: 0;
+}
+
+/*Bullet list*/
+main section:nth-of-type(5) > article ul:first-of-type {
+    list-style-type: disc;
+    padding-left: 1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+main section:nth-of-type(5) article ul li {
+    color: var(--font-color-2);
+}
+
+main section:nth-of-type(5) > article ul:first-of-type li::marker {
+    color: var(--footer-icon--);
+}
+
+main section:nth-of-type(5) strong {
+    color: var(--font-color--);
+}
+
+/*Checkmark list*/
+main section:nth-of-type(5) > article ul:nth-of-type(2) li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+main section:nth-of-type(5) > article ul:nth-of-type(2) p {
+    color: var(--font-color--);
+}
+
+main section:nth-of-type(5) > article ul:nth-of-type(2) li svg {
+    fill: var(--download-button-color);
+}
+
+
+/*Link list*/
+main section:nth-of-type(5) > article ul:last-of-type {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+main section:nth-of-type(5) > article ul:last-of-type li a {
+    color: var(--download-button-color);
+}
+
+main section:nth-of-type(5) > article ul:last-of-type li:first-of-type {
+    padding: 1em;
+    background-color: var(--download-button-color);
+    border-radius: .5em;
+}
+
+main section:nth-of-type(5) > article ul:last-of-type li:first-of-type a {
+    color: var(--free-games-font);
+}
+
+main section:nth-of-type(5) section article {
+    background-color: var(--free-games-background);
+    padding: 3em;
+    border-radius: 1em;
+
+    margin: 2em 0;
+}
+
+main section:nth-of-type(5) section article p {
+    color: var(--font-color-2);
+    line-height: 2em;
+}
+
+main section:nth-of-type(5) section > h3 {
+    margin: 3em 0 0 0;
+}
+
+main section:nth-of-type(5) > a {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    width: 100%;
+    background-color: var(--button-color);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+main section:nth-of-type(5) > a svg {
+    width: 1em;
+    fill: var(--svg-color--);
+}
+
+
+
+
+
+
+
+/*Media queries voor UE*/
+@media (min-width: 50em) {
+    /*Genre's section 3*/
+    main > section:nth-of-type(3) ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Tutorials*/
+    main section:nth-of-type(4) > section:nth-of-type(2) section {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(20em, auto));
+        column-gap: 1.5em;
+
+        justify-content: stretch;
+    }
+}
+
+
+@media (min-width:80em) {
+
+    /*Section 1*/
+    main > section:first-of-type{
+        display: flex;
+        justify-self: center;
+        width: 95%;
+
+        position: relative;
+        padding-top: 5em;
+    }
+    main > section:first-of-type article {
+        max-width: 50%;
+    }
+    main > section:first-of-type video {
+        position: absolute;
+        z-index: -1;
+        right: 1em;
+        max-width: 68%;
+    }
+    main > section:first-of-type svg{
+        display: block;
+        margin-bottom: 3em;
+    }
+    main > section:first-of-type h2 {
+        font-size: 2.8em;
+        text-shadow: var(--shadow-color) .1em .1em .2em;
+    }
+    main > section:first-of-type p {
+        font-size: 1.3em;
+        text-shadow: var(--shadow-color) .1em .1em .2em;
+    }    
+    main > section:first-of-type ul {
+        display: flex;
+        flex-direction: row;
+    }
+    main > section:first-of-type ul li a {
+        margin: 0;
+    }
+
+    /*News section 2*/
+    main > section:nth-of-type(2) {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+    main > section:nth-of-type(2) > article:first-of-type {
+        display: flex;
+        justify-content: space-between;
+    }
+    main > section:nth-of-type(2) h3 {
+        overflow: hidden;           
+        text-overflow: ellipsis;    
+        
+        display: -webkit-box;       
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: 2; 
+        line-clamp: 2;
+        
+        max-height: 3em;            
+        line-height: 1.5em; 
+        margin-bottom: 0;
+    }
+    main > section:nth-of-type(2) p {
+        margin-top: .5em;
+    }
+    main > section:nth-of-type(2) ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main > section:nth-of-type(2) li a {
+        height: 12em;
+    }
+    main > section:nth-of-type(2) li a img {
+        height: 12em;
+    }
+    main > section:nth-of-type(2) ul li article {
+        padding: 0 1em;
+    }
+
+    /*Genre's section 3*/
+    main > section:nth-of-type(3) {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center
+    }
+    main > section:nth-of-type(3) h2 {
+        font-size: 2.8em;
+    }
+    main > section:nth-of-type(3) p {
+        font-size: 1.3em;
+    }
+    main > section:nth-of-type(3) ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /*Section 4*/
+    main section:nth-of-type(4) {
+        padding: 2em;
+        display: flex;
+        justify-self: center;
+    }
+
+    
+    /*Licensing section 5*/
+    main section:nth-of-type(5) section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 1.5em;
+    }
+
+    main section:nth-of-type(5) section h3 {
+        grid-column: span 2;
+    }
+}
 
 
 

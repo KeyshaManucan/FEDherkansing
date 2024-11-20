@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/unrealEngine.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/ueFooter.css">
 </head>
 <body>
     <header>
@@ -118,12 +118,17 @@
 
             <!--Video section 1-->
             <section>
-                <h2>We make the engine.</h2>
-                <h2>You make it Unreal.</h2>
-                <p>Unreal Engine is built by developers, for developers, with fair terms for all. Because everyone with an idea deserves to use the world’s most open, advanced real-time creation tool to bring it to life.</p>
-                
-                <a href="#">Get Unreal</a>
-                <a href="#">Learn about licensing</a>
+                <article>
+                    <svg fill="#fff" viewBox="0 0 233 32" xmlns="http://www.w3.org/2000/svg"><path d="m204.909 9.6 7.589 7.826v-7.827h3.603v12.803h-3.274l-8.266-8.413v8.413h-3.603v-12.802zm17.526 7.68v2.268l9.985.001v2.853h-13.661v-12.802h13.46v2.851h-9.784v2.103h8.066v2.726zm-222.435-1.28c0-8.837 7.163-16 16-16s16 7.163 16 16-7.163 16-16 16-16-7.163-16-16zm18.523 7.129 1.57 1.766c3.912-1.847 5.139-5.261 5.416-6.591-1.431 1.465-3.013 2.95-4.078 1.922 0 0-.058-5.485-.058-7.735 0-3.026 2.868-5.28 2.868-5.28-1.577.281-3.472.843-5.482 2.816a7.473 7.473 0 0 0 -.516.567c-.862-.66-1.979-.461-1.979-.461.604.331 1.207 1.297 1.207 2.096v7.855s-1.316 1.157-2.33 1.157a1.43 1.43 0 0 1 -1.173-.593 1.555 1.555 0 0 1 -.198-.342v-9.706c-.3.248-1.313.452-1.313-1.23 0-1.045.754-2.29 2.094-3.054a9.878 9.878 0 0 0 -4.973 2.294 9.74 9.74 0 0 0 -3.37 7.463s.981-3.063 2.208-3.345a1.186 1.186 0 0 1 1.488 1.187v7.193c0 .729-.47.888-.904.88a3.762 3.762 0 0 1 -.867-.164 9.782 9.782 0 0 0 7.738 3.97zm32.612-7.055c0 2.23-1.226 3.676-3.695 3.676s-3.712-1.445-3.712-3.676v-6.475h-3.73v6.767c0 3.895 2.67 6.456 7.442 6.456 4.774 0 7.425-2.56 7.425-6.456v-6.767h-3.73zm17.75 1.352-7.59-7.826h-3.95v12.802h3.603v-8.413l8.266 8.413h3.273v-12.803h-3.602zm21.057-3.456c0-2.927-2.542-4.371-5.816-4.371h-8.98v12.8h3.713v-4.041h3.768l3.383 4.042h4.335l-3.768-4.352c2.011-.585 3.365-1.938 3.365-4.078zm-6.09 1.682h-5.011v-3.218h5.011c1.335 0 2.304.366 2.304 1.609s-.969 1.609-2.304 1.609zm11.744 1.628h8.065v-2.725h-8.065v-2.103h9.784v-2.852h-13.46v12.802h13.661v-2.853h-9.985v-2.27zm17.43-7.68-6.62 12.8h3.914l1.207-2.45h7.022l1.207 2.45h3.969l-6.62-12.8zm-.22 7.698 2.232-4.535 2.212 4.535zm15.803-7.698h-3.731v12.8h12.344v-2.998h-8.613zm18.873 7.68h8.064v-2.725h-8.064v-2.103h9.784v-2.852h-13.46v12.802h13.661v-2.853h-9.985v-2.27zm23.578.146-7.589-7.826h-3.95v12.802h3.602v-8.413l8.267 8.413h3.273v-12.803h-3.603zm17.893.184v1.152c-.896.823-2.14 1.134-3.713 1.134-3.109 0-4.864-1.372-4.864-3.895 0-2.505 1.701-3.877 4.81-3.877 1.719 0 2.871.439 3.968 1.426l2.724-2.012c-1.335-1.243-3.62-2.36-6.784-2.36-5.249 0-8.504 2.488-8.504 6.823 0 4.334 3.255 6.822 8.504 6.822 3.419 0 5.943-1.134 7.315-2.835v-4.992h-7.7v2.614zm9.384-8.01h-3.73v12.8h3.73z" fill-rule="evenodd"/></svg>
+                    <h2>We make the engine.</h2>
+                    <h2>You make it Unreal.</h2>
+                    <p>Unreal Engine is built by developers, for developers, with fair terms for all. Because everyone with an idea deserves to use the world’s most open, advanced real-time creation tool to bring it to life.</p>
+                    
+                    <ul>
+                        <li><a href="#">Get Unreal</a></li>
+                        <li><a href="#">Learn about licensing</a></li>
+                    </ul>
+                </article>
 
                 <video autoplay muted><source src="./images/epic-gdc24-webbanner-compressed.mp4"></video>
             </section>
@@ -301,141 +306,340 @@
                     <p>New to real-time 3D? Making the switch from another engine? Wherever you’re coming from, we’ve got onboarding, tutorials, samples, documentation, and more to help you get started.</p>
                 </article>
 
-                <ul>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Unreal Editor for Fortnite</a></li>
-                    <li><a href="#">Architecture</a></li>
-                    <li><a href="#">Film and TV</a></li>
-                    <li><a href="#">Animation</a></li>
-                    <li><a href="#">Simulation</a></li>
-                </ul>
-
-                <!--Tutorials-->
+                <!--Tutorials section 4.1-->
                 <section>
+                    <form>
+                        <label><input type="radio" name="tutorials" value="games" checked>Games</label>
+                        <label><input type="radio" name="tutorials" value="editor">Unreal Editor for Fortnite</label>
+                        <label><input type="radio" name="tutorials" value="architecture">Architecture</label>
+                        <label><input type="radio" name="tutorials" value="film_tv">Film and TV</label>
+                        <label><input type="radio" name="tutorials" value="animation">Animation</label>
+                        <label><input type="radio" name="tutorials" value="simulation">Simulation</label>
+                    </form>
+                    
                     <article>
                         <h2>Tutorials</h2>
                         <a href="#">Go to library</a>
                     </article>
 
-                    <article>
-                        <a href="#">
-                            <img src="./images/Tutorials/img1.webp" alt="Example image of the online learning in Unreal Engine">
-                            <aside>Epic online Learning - 2yr ago</aside>
+                    <!--section 4.1.1-->
+                    <section class="games">
+                        <article>
+                            <a href="#">
+                                <img src="./images/Tutorials/img1.webp" alt="Example image of the online learning in Unreal Engine">
+                                <aside>Epic online Learning - 2yr ago</aside>
+        
+                                <h3>Your first Hour in Unreal Engine 5.2</h3>
+                                <p>We’ll look at the launcher, editor creating a basic level including lighting and level layout.</p>    
+                            </a>
+                        </article>
     
-                            <h3>Your first Hour in Unreal Engine 5.2</h3>
-                            <p>We’ll look at the launcher, editor creating a basic level including lighting and level layout.</p>    
-                        </a>
-                    </article>
-
-                    <article>
-                        <a href="#">
-                            <img src="./images/Tutorials/img2.webp" alt="Example image of game creation in Unreal Engine 5">
-                            <aside>Andi - 3yr ago</aside>
+                        <article>
+                            <a href="#">
+                                <img src="./images/Tutorials/img2.webp" alt="Example image of game creation in Unreal Engine 5">
+                                <aside>Andi - 3yr ago</aside>
+        
+                                <h3>Your First Game in Unreal Engine 5</h3>
+                                <p>Practical in-editor demo showcasing UE5's rapid game creation from scratch.</p>    
+                            </a>
+                        </article>
     
-                            <h3>Your First Game in Unreal Engine 5</h3>
-                            <p>Practical in-editor demo showcasing UE5's rapid game creation from scratch.</p>    
-                        </a>
-                    </article>
-
-                    <article>
-                        <a href="#">
-                            <img src="./images/Tutorials/img3.webp" alt="Example image of the overview of the online learning in Unreal Engine">
-                            <aside>Epic online learning - 3yr ago</aside>
+                        <article>
+                            <a href="#">
+                                <img src="./images/Tutorials/img3.webp" alt="Example image of the overview of the online learning in Unreal Engine">
+                                <aside>Epic online learning - 3yr ago</aside>
+        
+                                <h3>BeginPlay</h3>
+                                <p>A developer focused overview of Unreal Engine’s features and tools.</p>    
+                            </a>
+                        </article>
     
-                            <h3>BeginPlay</h3>
-                            <p>A developer focused overview of Unreal Engine’s features and tools.</p>    
-                        </a>
-                    </article>
+                        <button>
+                            <p>Show more</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        </button>
+                    </section>
 
-                    <button>
-                        <p>Show more</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </button>
+                    <section class="editor">
+                        <article>
+                            <a href="#">
+                                <img src="./images/Tutorials/img4.webp" alt="Example image of starting the UEFN">
+                                <aside>Tutorial - 2yr ago</aside>
+
+                                <h3>Your First Hour in UEFN</h3>
+                                <p>Explore the basics of how to get started in UEFN including how to set up a project and map, navigate the user interface, add custom content, and playtest your experience.</p>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="#">
+                                <img src="./images/Tutorials/img5.webp" alt="Example image of animation in UEFN">
+                                <aside>Course - 2yr ago</aside>
+
+                                <h3>Animation in UEFN</h3>
+                                <p>Dive into a few of the fundamentals of working with animation assets, Control Rig, and Sequencer in UEFN.</p>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="#">
+                                <img src="./images/Tutorials/img6.webp" alt="Example image of viewport controls in UEFN">
+                                <aside>Tutorial - 2yr ago</aside>
+
+                                <h3>Viewport controls in UEFN</h3>
+                                <p>Get started with Viewport controls in UEFN by learning how to navigate the scene and transform objects.</p>
+                            </a>
+                        </article>
+
+                        <button>
+                            <p>Show more</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        </button>
+                    </section>     
+                    
+
+                    <!--Documentation-->
+                    <article>
+                        <h2>Documentation</h2>
+                        <ul>
+                            <li><p>Know what you want to do, but not how? Dig into our wide range of documentation to find your footing!</p></li>
+                            
+                            <li>
+                                <a href="#">
+                                    <p>Understanding the Basics</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#">
+                                    <p>Working with Content</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#">
+                                    <p>Programming & Scripting</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#">
+                                    <p>Setting Up Your Production Pipeline</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                                </a>
+                            </li>
+    
+                            <li><a href="#">Go to Documentation</a></li>
+                        </ul>
+                    </article>
                 </section>
 
-                <!--Documentation-->
+                <!--Sample Projects section 4.2-->
                 <section>
-                    <h2>Documentation</h2>
-                    <ul>
-                        <li><p>Know what you want to do, but not how? Dig into our wide range of documentation to find your footing!</p></li>
-                        
-                        <li>
-                            <a href="#">
-                                <p>Understanding the Basics</p>
+                        <h2>Sample projects</h2>
+                        <p>Samples are pre-built projects designed to help you quickly learn and get working in Unreal Engine without needing to start from scratch. Download, play, deconstruct, and make them your own.</p>
+                        <a href="#">More samples</a>
+
+
+                        <section>
+                            <article>
+                                <a href="#">
+                                    <img src="./images/Sample_projects/img1.webp" alt="Example picture of the sample project Stack O'Bot">
+                                    <h3>Stack O'Bot</h3>
+                                    <p>Stack'O'Bot is a new small project that can be a good starting point for advanced beginners.</p>    
+                                </a>
+                            </article>
+        
+                            <article>
+                                <a href="#">
+                                    <img src="./images/Sample_projects/img2.webp" alt="Content Examples cover picture">
+                                    <h3>Content Examples</h3>
+                                    <p>Get up to speed with a variety of different techniques for building your own games.</p>    
+                                </a>
+                            </article>
+        
+                            <article>
+                                <a href="#">
+                                    <img src="./images/Sample_projects/img3.webp" alt="Example picture of the Lyra Sample Game">
+                                    <h3>Lyra Sample Game</h3>
+                                    <p>A perfect starting point for those looking to jump right into Unreal Engine for Game Development.</p>    
+                                </a>
+                            </article>
+        
+                            <article>
+                                <a href="#">
+                                    <img src="./images/Sample_projects/img4.webp" alt="Example picture of the casual game sample project Cropout">
+                                    <h3>Croput</h3>
+                                    <p>A casual game sample that shows you best practices for creating for cross-platform titles.</p>    
+                                </a>
+                            </article>
+        
+                            <button>
+                                <p>Show more</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <p>Working with Content</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <p>Programming & Scripting</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <p>Setting Up Your Production Pipeline</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                            </a>
-                        </li>
-
-                        <li><a href="#">Go to Documentation</a></li>
-                    </ul>
-                </section>
-
-                <!--Sample Projects-->
-                <section>
-                    <h2>Sample projects</h2>
-                    <p>Samples are pre-built projects designed to help you quickly learn and get working in Unreal Engine without needing to start from scratch. Download, play, deconstruct, and make them your own.</p>
-                    <a href="#">More samples</a>
-
-                    <article>
-                        <a href="#">
-                            <img src="./images/Sample_projects/img1.webp" alt="Example picture of the sample project Stack O'Bot">
-                            <h3>Stack O'Bot</h3>
-                            <p>Stack'O'Bot is a new small project that can be a good starting point for advanced beginners.</p>    
-                        </a>
-                    </article>
-
-                    <article>
-                        <a href="#">
-                            <img src="./images/Sample_projects/img2.webp" alt="Content Examples cover picture">
-                            <h3>Content Examples</h3>
-                            <p>Get up to speed with a variety of different techniques for building your own games.</p>    
-                        </a>
-                    </article>
-
-                    <article>
-                        <a href="#">
-                            <img src="./images/Sample_projects/img3.webp" alt="Example picture of the Lyra Sample Game">
-                            <h3>Lyra Sample Game</h3>
-                            <p>A perfect starting point for those looking to jump right into Unreal Engine for Game Development.</p>    
-                        </a>
-                    </article>
-
-                    <article>
-                        <a href="#">
-                            <img src="./images/Sample_projects/img4.webp" alt="Example picture of the casual game sample project Cropout">
-                            <h3>Croput</h3>
-                            <p>A casual game sample that shows you best practices for creating for cross-platform titles.</p>    
-                        </a>
-                    </article>
-
-                    <button>
-                        <p>Show more</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka css-1y8mdod" viewBox="0 0 24 24"><path d="M8.97 4.47a.75.75 0 0 1 1.06 0L17.56 12l-7.53 7.53a.75.75 0 1 1-1.06-1.06L15.44 12 8.97 5.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-                    </button>
+                            </button>
+                        </section>                  
                 </section>
             </section>
+
+            <!--Licensing section 5-->
+            <section>
+                <h2>Licensing</h2>
+                <p>We’ve streamlined our license terms to make your choices clearer. Need something designed just for you? Work with us to create a custom license. Visit our <a href="#">FAQ</a>  or reach out to the community if you have any questions.</p>
+
+                <h3>Under $1 million USD in revenue?</h3>
+                <article>
+                    <h3>Free</h3>
+                    <ul>
+                        <li><strong>Game developers</strong> (royalties apply after $1 million USD gross product revenue)</li>
+                        <li><strong>Individuals and small businesses</strong> (with less than $1 million USD in annual gross revenue)</li>
+                        <li><strong>For educators and schools</strong> (no revenue limits)</li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka" width="24" height="24" viewBox="0 0 24 24"><path d="M21.53 4.97a.75.75 0 0 1 0 1.06L8.5 19.06l-6.03-6.03a.75.75 0 1 1 1.06-1.06l4.97 4.97L20.47 4.97a.75.75 0 0 1 1.06 0" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            <p>Access to the source code</p>
+                        </li>
+
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka" width="24" height="24" viewBox="0 0 24 24"><path d="M21.53 4.97a.75.75 0 0 1 0 1.06L8.5 19.06l-6.03-6.03a.75.75 0 1 1 1.06-1.06l4.97 4.97L20.47 4.97a.75.75 0 0 1 1.06 0" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            <p>All platforms & features</p>
+                        </li>
+
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5aka" width="24" height="24" viewBox="0 0 24 24"><path d="M21.53 4.97a.75.75 0 0 1 0 1.06L8.5 19.06l-6.03-6.03a.75.75 0 1 1 1.06-1.06l4.97 4.97L20.47 4.97a.75.75 0 0 1 1.06 0" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            <p>Forums and documentation on the Epic Developer Community</p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Download now</a></li>
+                        <li><a href="#">View FAQ</a></li>
+                        <li><a href="#">Licensing Terms</a></li>
+                    </ul>
+                </article>
+
+                <section>
+                    <h3>Over $1 million USD in revenue?</h3>
+                    <article>
+                        <h3>Royalty-based</h3>
+                        <p>If you're creating a game or application that relies on engine code at runtime and will be licensed to third party end users, you'll pay royalties and <strong>won't be required to purchase seats.</strong></p>
+                    </article>
+    
+                    <article>
+                        <h3>Seat-based</h3>
+                        <p>If you're using Unreal Engine for commercial purposes, have generated more than <strong>$1 million in the past 12 months,</strong> and are not creating a game or application that relies on engine code at runtime and will be licensed to third party end users, <strong>then a seat license fee is required</strong>.</p>
+                    </article>
+                </section>
+
+                <a href="#">
+                    <p>Read more</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="eds_5nt5ak0 eds_5nt5ak9 eds_5nt5ak1" viewBox="0 0 24 24"><path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M8 11a1 1 0 1 0 0 2h5.586l-1.793 1.793a1 1 0 0 0 1.414 1.414L17.414 12l-4.207-4.207a1 1 0 1 0-1.414 1.414L13.586 11z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                </a>
+            </section>
         </main>
+        
+        <footer>
+            <section>
+                <svg fill="#fff" viewBox="0 0 233 32" xmlns="http://www.w3.org/2000/svg"><path d="m204.909 9.6 7.589 7.826v-7.827h3.603v12.803h-3.274l-8.266-8.413v8.413h-3.603v-12.802zm17.526 7.68v2.268l9.985.001v2.853h-13.661v-12.802h13.46v2.851h-9.784v2.103h8.066v2.726zm-222.435-1.28c0-8.837 7.163-16 16-16s16 7.163 16 16-7.163 16-16 16-16-7.163-16-16zm18.523 7.129 1.57 1.766c3.912-1.847 5.139-5.261 5.416-6.591-1.431 1.465-3.013 2.95-4.078 1.922 0 0-.058-5.485-.058-7.735 0-3.026 2.868-5.28 2.868-5.28-1.577.281-3.472.843-5.482 2.816a7.473 7.473 0 0 0 -.516.567c-.862-.66-1.979-.461-1.979-.461.604.331 1.207 1.297 1.207 2.096v7.855s-1.316 1.157-2.33 1.157a1.43 1.43 0 0 1 -1.173-.593 1.555 1.555 0 0 1 -.198-.342v-9.706c-.3.248-1.313.452-1.313-1.23 0-1.045.754-2.29 2.094-3.054a9.878 9.878 0 0 0 -4.973 2.294 9.74 9.74 0 0 0 -3.37 7.463s.981-3.063 2.208-3.345a1.186 1.186 0 0 1 1.488 1.187v7.193c0 .729-.47.888-.904.88a3.762 3.762 0 0 1 -.867-.164 9.782 9.782 0 0 0 7.738 3.97zm32.612-7.055c0 2.23-1.226 3.676-3.695 3.676s-3.712-1.445-3.712-3.676v-6.475h-3.73v6.767c0 3.895 2.67 6.456 7.442 6.456 4.774 0 7.425-2.56 7.425-6.456v-6.767h-3.73zm17.75 1.352-7.59-7.826h-3.95v12.802h3.603v-8.413l8.266 8.413h3.273v-12.803h-3.602zm21.057-3.456c0-2.927-2.542-4.371-5.816-4.371h-8.98v12.8h3.713v-4.041h3.768l3.383 4.042h4.335l-3.768-4.352c2.011-.585 3.365-1.938 3.365-4.078zm-6.09 1.682h-5.011v-3.218h5.011c1.335 0 2.304.366 2.304 1.609s-.969 1.609-2.304 1.609zm11.744 1.628h8.065v-2.725h-8.065v-2.103h9.784v-2.852h-13.46v12.802h13.661v-2.853h-9.985v-2.27zm17.43-7.68-6.62 12.8h3.914l1.207-2.45h7.022l1.207 2.45h3.969l-6.62-12.8zm-.22 7.698 2.232-4.535 2.212 4.535zm15.803-7.698h-3.731v12.8h12.344v-2.998h-8.613zm18.873 7.68h8.064v-2.725h-8.064v-2.103h9.784v-2.852h-13.46v12.802h13.661v-2.853h-9.985v-2.27zm23.578.146-7.589-7.826h-3.95v12.802h3.602v-8.413l8.267 8.413h3.273v-12.803h-3.603zm17.893.184v1.152c-.896.823-2.14 1.134-3.713 1.134-3.109 0-4.864-1.372-4.864-3.895 0-2.505 1.701-3.877 4.81-3.877 1.719 0 2.871.439 3.968 1.426l2.724-2.012c-1.335-1.243-3.62-2.36-6.784-2.36-5.249 0-8.504 2.488-8.504 6.823 0 4.334 3.255 6.822 8.504 6.822 3.419 0 5.943-1.134 7.315-2.835v-4.992h-7.7v2.614zm9.384-8.01h-3.73v12.8h3.73z" fill-rule="evenodd"/></svg>
+                <ul>
+                    <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd12f847"> <path style="display: inline;" d="M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565 c0,138.542-105.461,298.285-298.274,298.285c-59.209,0-114.322-17.357-160.716-47.104c8.212,0.973,16.546,1.47,25.012,1.47 c49.121,0,94.318-16.759,130.209-44.884c-45.887-0.841-84.596-31.154-97.938-72.804c6.408,1.227,12.968,1.886,19.73,1.886 c9.55,0,18.816-1.287,27.617-3.68c-47.955-9.633-84.1-52.001-84.1-102.795c0-0.446,0-0.882,0.011-1.318 c14.133,7.847,30.294,12.562,47.488,13.109c-28.134-18.796-46.637-50.885-46.637-87.262c0-19.212,5.16-37.218,14.193-52.7 c51.707,63.426,128.941,105.156,216.072,109.536c-1.784-7.675-2.718-15.674-2.718-23.896c0-57.891,46.941-104.832,104.832-104.832 c30.173,0,57.404,12.734,76.525,33.102c23.887-4.694,46.313-13.423,66.569-25.438c-7.827,24.485-24.434,45.025-46.089,58.002 c21.209-2.535,41.426-8.171,60.222-16.505C497.448,118.542,479.666,137.004,459.186,151.787z"> </path> </g> </g></svg></li>
+                    <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96.875 96.875" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <g> <path d="M95.201,25.538c-1.186-5.152-5.4-8.953-10.473-9.52c-12.013-1.341-24.172-1.348-36.275-1.341 c-12.105-0.007-24.266,0-36.279,1.341c-5.07,0.567-9.281,4.368-10.467,9.52C0.019,32.875,0,40.884,0,48.438 C0,55.992,0,64,1.688,71.336c1.184,5.151,5.396,8.952,10.469,9.52c12.012,1.342,24.172,1.349,36.277,1.342 c12.107,0.007,24.264,0,36.275-1.342c5.07-0.567,9.285-4.368,10.471-9.52c1.689-7.337,1.695-15.345,1.695-22.898 C96.875,40.884,96.889,32.875,95.201,25.538z M35.936,63.474c0-10.716,0-21.32,0-32.037c10.267,5.357,20.466,10.678,30.798,16.068 C56.434,52.847,46.23,58.136,35.936,63.474z"/> </g> </g></svg></li>
+                    <li><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"/></g></svg></li>
+                </ul>
+            </section>
+
+            <section>
+                <details>
+                    <summary>Games</summary>
+                    <ul>
+                        <li><a href="#">Fortnite</a></li>
+                        <li><a href="#">Fall Guys</a></li>
+                        <li><a href="#">Rocket League</a></li>
+                        <li><a href="#">Unreal Tournament</a></li>
+                        <li><a href="#">Infinity Blade</a></li>
+                        <li><a href="#">Shadow Complex</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Marketplaces</summary>
+                    <ul>
+                        <li><a href="homepage.html">Epic Games Store</a></li>
+                        <li><a href="#">Fab</a></li>
+                        <li><a href="#">Sketchfab</a></li>
+                        <li><a href="#">Artstation</a></li>
+                        <li><a href="#">Store Refund Policy</a></li>
+                        <li><a href="#">Store EULA</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Tools</summary>
+                    <ul>
+                        <li><a href="#">Unreal Engine</a></li>
+                        <li><a href="#">UEFN</a></li>
+                        <li><a href="#">MetaHuman</a></li>
+                        <li><a href="#">Twinmotion</a></li>
+                        <li><a href="#">Megascans</a></li>
+                        <li><a href="#">RealityScan</a></li>
+                        <li><a href="#">Rad Game Tools</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Online Services</summary>
+                    <ul>
+                        <li><a href="#">Epic Online Services</a></li>
+                        <li><a href="#">Kids Web Services</a></li>
+                        <li><a href="#">Services Agreement</a></li>
+                        <li><a href="#">Acceptable Use Policy</a></li>
+                        <li><a href="#">Trust Statement</a></li>
+                        <li><a href="#">Subprocessor List</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Company</summary>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">UX Research</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Resources</summary>
+                    <ul>
+                        <li><a href="#">Dev Community</a></li>
+                        <li><a href="#">MegaGrants</a></li>
+                        <li><a href="#">Support-A-Creator</a></li>
+                        <li><a href="#">Distribute on Epic Games</a></li>
+                        <li><a href="#">Unreal Engine Branding Guidelines</a></li>
+                        <li><a href="#">Fan Art Policy</a></li>
+                        <li><a href="#">Community Rules</a></li>
+                        <li><a href="#">EU Digital Services Act Inquiries</a></li>
+                        <li><a href="#">Epic Direct Support</a></li>
+                    </ul>
+                </details>
+
+                <p>© 2024, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere.</p>
+
+                <ul>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Safety & security</a></li>
+                </ul>
+
+                <a href="#">Back to top</a>
+            </section>
+        </footer>
 
         <script defer src="scripts/header.js"></script>
         <script defer src="scripts/unrealEngine.js"></script>

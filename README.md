@@ -422,6 +422,7 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
   - In de footer overlapt de tekst heel even als je de resolutie van het scherm verkleint
   - @media voor de footer werd niet toegepast toen ik het in de home.css aanriep, maar werkte wel toen ik @media naar de footer.css verplaatste
   - Elke keer als ik backdrop-filter:blur() aan mijn header toevoeg op de Unreal Engine pagoma, breekt het mijn nav menu's en klappen ze niet meer volledig uit.
+  
 
  
 </details>
@@ -450,7 +451,11 @@ Op mijn pagina is een download button te zien, moet ik dit ook laten werken?
 
   Ik had vaak moeite met de juiste container vinden, bijvboorbeeld bij de Titels en buttons van elke nieuwe sectie. Om ruimte tussen de titel en button te zetten maakte ik gebruik van 'justify-content: space-between', maar om hier goed gebruik van te kunnen maken heb ik een container om de elementen heen. Hier gebruikte ik vaak article, maar ik vind zelf dat het geen article is omdat het alleen een titel en button is. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  In mijn JavaScript maak ik gebruik van display:block om elementen weg te halen en te laten verschijnen gebaseerd op de resolutie van het scherm. Door display:block kan bij sommige onderdelen moeilijk display:flex of grid plaatsen, dit maakt de stijling van de html moeilijk. Ik heb op internet gezocht naar een antwoord, maar ik kreeg alleen display:none als antwoord en dit is natuurlijk niet de oplossing.
+
+  <img src="readme-images\display_block.png" width="375px" alt="probleem met oplossing vinden voor display:block">
+
+  
 </details>
 
 
